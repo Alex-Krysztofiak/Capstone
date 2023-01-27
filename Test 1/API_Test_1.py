@@ -2,10 +2,16 @@ import requests
 import json
 
 #Used to test how to display usernames without all the other data
-
+ 
 url1 = f'https://api.opendota.com/api/players/163881259'
 r3 = requests.get(url1)
 data3 = json.loads(r3.text)
+url2 = f'https://api.opendota.com/api/players/163881259/recentMatches'
+r2 = requests.get(url2)
+data2 = json.loads(r2.text)
 
 print(data3['profile']['personaname'])
+
 print(json.dumps(data3))
+print(json.dumps(data2[0]))
+
