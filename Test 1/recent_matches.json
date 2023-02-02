@@ -1,0 +1,222 @@
+{
+  "0":{
+    "match id":6999034427,
+    "duration":"00:41:37",
+    "hero name":"Shadow Shaman",
+    "kills":2,
+    "deaths":10,
+    "assists":10,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "1":{
+    "match id":6997746729,
+    "duration":"00:44:47",
+    "hero name":"Slark",
+    "kills":13,
+    "deaths":5,
+    "assists":12,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  "2":{
+    "match id":6996228597,
+    "duration":"00:57:26",
+    "hero name":"Slark",
+    "kills":11,
+    "deaths":7,
+    "assists":16,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "3":{
+    "match id":6996127650,
+    "duration":"00:38:37",
+    "hero name":"Spectre",
+    "kills":8,
+    "deaths":4,
+    "assists":26,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  "4":{
+    "match id":6995757571,
+    "duration":"00:41:13",
+    "hero name":"Spectre",
+    "kills":17,
+    "deaths":5,
+    "assists":24,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  "5":{
+    "match id":6993532746,
+    "duration":"00:19:29",
+    "hero name":"Rubick",
+    "kills":2,
+    "deaths":4,
+    "assists":2,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "6":{
+    "match id":6989623715,
+    "duration":"01:03:50",
+    "hero name":"Rubick",
+    "kills":3,
+    "deaths":9,
+    "assists":21,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  "7":{
+    "match id":6988566494,
+    "duration":"00:32:39",
+    "hero name":"Jakiro",
+    "kills":5,
+    "deaths":4,
+    "assists":20,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  "8":{
+    "match id":6985942207,
+    "duration":"00:42:43",
+    "hero name":"Clinkz",
+    "kills":7,
+    "deaths":4,
+    "assists":11,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  "9":{
+    "match id":6984025343,
+    "duration":"00:43:18",
+    "hero name":"Phantom Assassin",
+    "kills":10,
+    "deaths":10,
+    "assists":4,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  "10":{
+    "match id":6983948686,
+    "duration":"00:39:58",
+    "hero name":"Juggernaut",
+    "kills":4,
+    "deaths":4,
+    "assists":5,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  "11":{
+    "match id":6983108087,
+    "duration":"00:26:04",
+    "hero name":"Luna",
+    "kills":4,
+    "deaths":1,
+    "assists":3,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  "12":{
+    "match id":6982824471,
+    "duration":"00:33:11",
+    "hero name":"Razor",
+    "kills":5,
+    "deaths":15,
+    "assists":14,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  "13":{
+    "match id":6982785274,
+    "duration":"00:30:15",
+    "hero name":"Lich",
+    "kills":1,
+    "deaths":9,
+    "assists":7,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "14":{
+    "match id":6981536460,
+    "duration":"00:31:59",
+    "hero name":"Witch Doctor",
+    "kills":2,
+    "deaths":13,
+    "assists":10,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "15":{
+    "match id":6981503296,
+    "duration":"00:31:18",
+    "hero name":"Rubick",
+    "kills":0,
+    "deaths":6,
+    "assists":10,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "16":{
+    "match id":6981252219,
+    "duration":"00:40:46",
+    "hero name":"Drow Ranger",
+    "kills":6,
+    "deaths":7,
+    "assists":9,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  "17":{
+    "match id":6979549358,
+    "duration":"00:37:46",
+    "hero name":"Drow Ranger",
+    "kills":4,
+    "deaths":8,
+    "assists":7,
+    "party size":2,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  "18":{
+    "match id":6979150176,
+    "duration":"00:38:43",
+    "hero name":"Spirit Breaker",
+    "kills":7,
+    "deaths":1,
+    "assists":27,
+    "party size":3,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  "19":{
+    "match id":6977979816,
+    "duration":"00:51:49",
+    "hero name":"Slark",
+    "kills":10,
+    "deaths":3,
+    "assists":12,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  }
+}

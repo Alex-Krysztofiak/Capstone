@@ -28,7 +28,6 @@ print("")
  """
 
  # Test 2 (create the hero list json)
- 
 """ url4 = f'https://api.opendota.com/api/heroes'
 r4 = requests.get(url4)
 data4 = json.loads(r4.text)
@@ -53,17 +52,30 @@ dotadf = pd.DataFrame(hero_list)
 #print(dotadf)
 #dotadf.to_json('hero_info.json', orient='index', indent=2 )
  """
-
-
-r3 = open('hero_info.json',)
-data3 = json.load(r3)
-
+#r3 = open('hero_info.json',)
+#data3 = json.load(r3)
 #for x in data3:
     #print(data3[x]['id'],data3[x]['name'])
-
-
-
-
-
 #dotadf = pd.DataFrame(hero_list) 
 #dotadf.to_json('hero_info.json', orient='index', indent=2 )
+
+#Test 3, hero icons
+""" url4 = f'https://api.opendota.com/api/heroStats'
+r4 = requests.get(url4)
+data4 = json.loads(r4.text)
+
+hero_list = []
+for hero in data4:
+    img = hero['img']
+        
+    hero_info = {
+      'img': img
+            
+    }
+    hero_list.append(hero_info)
+
+dotadf = pd.DataFrame(hero_list) 
+print(dotadf)
+print(data4[0]['icon'])
+#dotadf.to_json('hero_info.json', orient='index', indent=2 ) """
+

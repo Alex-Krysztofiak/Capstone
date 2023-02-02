@@ -23,8 +23,8 @@ steam_id = input("Steam ID:")
 baseurl = f'https://api.opendota.com/api/'
 player = f'players/{steam_id}/'
 endpoint = f''
-r3 = open('hero_info.json',)
-data3 = json.load(r3)
+heroInfoData = open('hero_info.json',)
+jsonData = json.load(heroInfoData)
 
 
 def main_request(baseurl, player, endpoint):
@@ -62,9 +62,9 @@ def get_recentMatches(response):
         else:
             result = 'Lost Match'
 
-        for x in data3:
-            if game['hero_id'] == data3[x]['id']:
-                hero_name = data3[x]['name']
+        for x in jsonData:
+            if game['hero_id'] == jsonData[x]['id']:
+                hero_name = jsonData[x]['name']
         
         match_info = {
             'match id': match_id,
@@ -99,5 +99,5 @@ get_user(data)
 mainlist.extend(get_recentMatches(data))
 
 dotadf = pd.DataFrame(mainlist) 
-
-dotadf.to_json('recentMatches.json', orient='index', indent=2 )
+#print(dotadf)
+dotadf.to_json('recent_matches.json', orient='index', indent=2 )
