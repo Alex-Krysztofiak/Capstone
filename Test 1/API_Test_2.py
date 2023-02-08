@@ -23,7 +23,7 @@ steam_id = input("Steam ID:")
 baseurl = f'https://api.opendota.com/api/'
 player = f'players/{steam_id}/'
 endpoint = f''
-heroInfoData = open('hero_info.json',)
+heroInfoData = open('Test 1\hero_info.json')
 jsonData = json.load(heroInfoData)
 
 
@@ -99,5 +99,5 @@ get_user(data)
 mainlist.extend(get_recentMatches(data))
 
 dotadf = pd.DataFrame(mainlist) 
-#print(dotadf)
-dotadf.to_json('recent_matches.json', orient='index', indent=2 )
+print(dotadf)
+dotadf.to_json('Test 1\matches_recent.json', orient='index', indent=2) 
