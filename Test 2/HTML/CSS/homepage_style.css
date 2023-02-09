@@ -68,7 +68,7 @@
     
 }
 
-button{
+.button{
    width: 200px;
    padding: 15px 0;
    text-align: center;
@@ -84,11 +84,8 @@ button{
    position: relative;
    overflow: hidden;
    text-decoration: none;
-   
-   
-   
 }
-span{
+.button span{
     background: linear-gradient(.25turn, #40d9aa, #35a7e3, #7d77ff);
     height: 100%;
     width: 0%;
@@ -100,10 +97,62 @@ span{
     transition: .4s;
     text-decoration: none;
 }
-button:hover span{
+.button:hover span{
     width: 110%;
     height: 130%;
     transform: translateX(100px);
     transform: translateY(5px);
-  
+}
+
+.button2{
+    width: 200px;
+    padding: 4px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    font-weight: bold; 
+    border: 2px solid #7d77ff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+ }
+ .button2 span{
+    background: linear-gradient(.25turn, #40d9aa, #35a7e3, #7d77ff);
+    height: 100%;
+    width: 0%;
+    border-radius: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0s;
+    text-decoration: none;
+}
+.button2:hover span{
+    width: 110%;
+    height: 130%;
+    transform: translateX(100px);
+    transform: translateY(5px);
+}
+
+.inputBox {
+    padding: 7px;
+    width: 300px;
+    background-color: #7d77ff;
+    color: #111111;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.inputBox::placeholder{
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+
 }
