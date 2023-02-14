@@ -1,0 +1,740 @@
+[
+ {
+  "id":1,
+  "name":"Anti-Mage",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":2,
+  "name":"Axe",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":3,
+  "name":"Bane",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":4,
+  "name":"Bloodseeker",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":5,
+  "name":"Crystal Maiden",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":6,
+  "name":"Drow Ranger",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":7,
+  "name":"Earthshaker",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":8,
+  "name":"Juggernaut",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":9,
+  "name":"Mirana",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":10,
+  "name":"Morphling",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":11,
+  "name":"Shadow Fiend",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":12,
+  "name":"Phantom Lancer",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":13,
+  "name":"Puck",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":14,
+  "name":"Pudge",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":15,
+  "name":"Razor",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":16,
+  "name":"Sand King",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":17,
+  "name":"Storm Spirit",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":18,
+  "name":"Sven",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":19,
+  "name":"Tiny",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":20,
+  "name":"Vengeful Spirit",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":21,
+  "name":"Windranger",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":22,
+  "name":"Zeus",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":23,
+  "name":"Kunkka",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":25,
+  "name":"Lina",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":26,
+  "name":"Lion",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":27,
+  "name":"Shadow Shaman",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":28,
+  "name":"Slardar",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":29,
+  "name":"Tidehunter",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":30,
+  "name":"Witch Doctor",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":31,
+  "name":"Lich",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":32,
+  "name":"Riki",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":33,
+  "name":"Enigma",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":34,
+  "name":"Tinker",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":35,
+  "name":"Sniper",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":36,
+  "name":"Necrophos",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":37,
+  "name":"Warlock",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":38,
+  "name":"Beastmaster",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":39,
+  "name":"Queen of Pain",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":40,
+  "name":"Venomancer",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":41,
+  "name":"Faceless Void",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":42,
+  "name":"Wraith King",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":43,
+  "name":"Death Prophet",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":44,
+  "name":"Phantom Assassin",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":45,
+  "name":"Pugna",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":46,
+  "name":"Templar Assassin",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":47,
+  "name":"Viper",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":48,
+  "name":"Luna",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":49,
+  "name":"Dragon Knight",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":50,
+  "name":"Dazzle",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":51,
+  "name":"Clockwerk",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":52,
+  "name":"Leshrac",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":53,
+  "name":"Nature's Prophet",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":54,
+  "name":"Lifestealer",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":55,
+  "name":"Dark Seer",
+  "primary attribute":"int",
+  "attack type":"Melee"
+ },
+ {
+  "id":56,
+  "name":"Clinkz",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":57,
+  "name":"Omniknight",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":58,
+  "name":"Enchantress",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":59,
+  "name":"Huskar",
+  "primary attribute":"str",
+  "attack type":"Ranged"
+ },
+ {
+  "id":60,
+  "name":"Night Stalker",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":61,
+  "name":"Broodmother",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":62,
+  "name":"Bounty Hunter",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":63,
+  "name":"Weaver",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":64,
+  "name":"Jakiro",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":65,
+  "name":"Batrider",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":66,
+  "name":"Chen",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":67,
+  "name":"Spectre",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":68,
+  "name":"Ancient Apparition",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":69,
+  "name":"Doom",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":70,
+  "name":"Ursa",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":71,
+  "name":"Spirit Breaker",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":72,
+  "name":"Gyrocopter",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":73,
+  "name":"Alchemist",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":74,
+  "name":"Invoker",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":75,
+  "name":"Silencer",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":76,
+  "name":"Outworld Destroyer",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":77,
+  "name":"Lycan",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":78,
+  "name":"Brewmaster",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":79,
+  "name":"Shadow Demon",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":80,
+  "name":"Lone Druid",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":81,
+  "name":"Chaos Knight",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":82,
+  "name":"Meepo",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":83,
+  "name":"Treant Protector",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":84,
+  "name":"Ogre Magi",
+  "primary attribute":"int",
+  "attack type":"Melee"
+ },
+ {
+  "id":85,
+  "name":"Undying",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":86,
+  "name":"Rubick",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":87,
+  "name":"Disruptor",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":88,
+  "name":"Nyx Assassin",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":89,
+  "name":"Naga Siren",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":90,
+  "name":"Keeper of the Light",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":91,
+  "name":"Io",
+  "primary attribute":"str",
+  "attack type":"Ranged"
+ },
+ {
+  "id":92,
+  "name":"Visage",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":93,
+  "name":"Slark",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":94,
+  "name":"Medusa",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":95,
+  "name":"Troll Warlord",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":96,
+  "name":"Centaur Warrunner",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":97,
+  "name":"Magnus",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":98,
+  "name":"Timbersaw",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":99,
+  "name":"Bristleback",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":100,
+  "name":"Tusk",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":101,
+  "name":"Skywrath Mage",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":102,
+  "name":"Abaddon",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":103,
+  "name":"Elder Titan",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":104,
+  "name":"Legion Commander",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":105,
+  "name":"Techies",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":106,
+  "name":"Ember Spirit",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":107,
+  "name":"Earth Spirit",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":108,
+  "name":"Underlord",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":109,
+  "name":"Terrorblade",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":110,
+  "name":"Phoenix",
+  "primary attribute":"str",
+  "attack type":"Ranged"
+ },
+ {
+  "id":111,
+  "name":"Oracle",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":112,
+  "name":"Winter Wyvern",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":113,
+  "name":"Arc Warden",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":114,
+  "name":"Monkey King",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":119,
+  "name":"Dark Willow",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":120,
+  "name":"Pangolier",
+  "primary attribute":"agi",
+  "attack type":"Melee"
+ },
+ {
+  "id":121,
+  "name":"Grimstroke",
+  "primary attribute":"int",
+  "attack type":"Ranged"
+ },
+ {
+  "id":123,
+  "name":"Hoodwink",
+  "primary attribute":"agi",
+  "attack type":"Ranged"
+ },
+ {
+  "id":126,
+  "name":"Void Spirit",
+  "primary attribute":"int",
+  "attack type":"Melee"
+ },
+ {
+  "id":128,
+  "name":"Snapfire",
+  "primary attribute":"str",
+  "attack type":"Ranged"
+ },
+ {
+  "id":129,
+  "name":"Mars",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":135,
+  "name":"Dawnbreaker",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":136,
+  "name":"Marci",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ },
+ {
+  "id":137,
+  "name":"Primal Beast",
+  "primary attribute":"str",
+  "attack type":"Melee"
+ }
+]
