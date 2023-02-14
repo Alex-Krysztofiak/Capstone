@@ -11,7 +11,7 @@
 .banner {  
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#1a1a1a, #1f1a20);
+    background: linear-gradient(#1a1a1a, #7d77ff);
     box-sizing: border-box;
     overflow: hidden;  
     background-position: center;
@@ -61,19 +61,39 @@
     color: #ffffff;
     border: 2px solid #7d77ff;
 }
-.dynamicPart{
-    padding: 15px;
+.flexContainer{
+    margin: 10px;
+    padding: 15px 300px;
     display: flex;
     flex-wrap: wrap;
     flex: 200px;
-    justify-content: center;
+    justify-content: leftio0;
     border: 2px solid #7d77ff;
+   
 }
-.dynamicPartChild{
-    margin: 5px;
-    padding: 5px;
-    width: 250px;
-    height: 300px;
-    color: #858484;
-    border: 2px solid #7d77ff;
+.flexChild{
+    margin: 10px;
+    padding: 0px;
+    width: 220px;
+    height: 130px;
+    color: #adadad;
+    /* border: 2px solid #7d77ff;  */
+    
+}
+.flexChild img{
+    width: 100%;
+    box-shadow: 4px 2px 2px #111111;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
+}
+.flexChild h1{
+    font-size: 20px;
+    color: #bebebe;
+    text-align: center;
+}
+.flexChild:hover img {
+    width: 130%;
+    transform: translate(-10%, -10%);
+    
 }
