@@ -1,0 +1,222 @@
+[
+  {
+    "match id":7016207731,
+    "duration":"00:40:00",
+    "hero name":"Slark",
+    "kills":11,
+    "deaths":6,
+    "assists":6,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7016165464,
+    "duration":"00:56:34",
+    "hero name":"Juggernaut",
+    "kills":13,
+    "deaths":6,
+    "assists":15,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7015909634,
+    "duration":"00:37:24",
+    "hero name":"Juggernaut",
+    "kills":13,
+    "deaths":4,
+    "assists":9,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":7014669118,
+    "duration":"00:34:39",
+    "hero name":"Clinkz",
+    "kills":11,
+    "deaths":4,
+    "assists":8,
+    "party size":3,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":7014613355,
+    "duration":"00:41:20",
+    "hero name":"Juggernaut",
+    "kills":13,
+    "deaths":5,
+    "assists":16,
+    "party size":3,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":7009890192,
+    "duration":"00:52:09",
+    "hero name":"Spectre",
+    "kills":12,
+    "deaths":7,
+    "assists":21,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  {
+    "match id":7009694620,
+    "duration":"00:29:36",
+    "hero name":"Juggernaut",
+    "kills":5,
+    "deaths":2,
+    "assists":12,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":7009619744,
+    "duration":"00:44:08",
+    "hero name":"Clinkz",
+    "kills":12,
+    "deaths":6,
+    "assists":13,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  {
+    "match id":7008424009,
+    "duration":"00:23:41",
+    "hero name":"Weaver",
+    "kills":2,
+    "deaths":3,
+    "assists":1,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7004418650,
+    "duration":"00:42:17",
+    "hero name":"Hoodwink",
+    "kills":5,
+    "deaths":13,
+    "assists":14,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7002454756,
+    "duration":"00:43:22",
+    "hero name":"Skywrath Mage",
+    "kills":4,
+    "deaths":12,
+    "assists":12,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7002335588,
+    "duration":"00:49:43",
+    "hero name":"Winter Wyvern",
+    "kills":4,
+    "deaths":12,
+    "assists":15,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7002275771,
+    "duration":"00:41:09",
+    "hero name":"Underlord",
+    "kills":7,
+    "deaths":9,
+    "assists":20,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match id":7002200588,
+    "duration":"00:43:00",
+    "hero name":"Juggernaut",
+    "kills":8,
+    "deaths":9,
+    "assists":12,
+    "party size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match id":6999143420,
+    "duration":"00:25:30",
+    "hero name":"Dazzle",
+    "kills":3,
+    "deaths":7,
+    "assists":9,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":6999034427,
+    "duration":"00:41:37",
+    "hero name":"Shadow Shaman",
+    "kills":2,
+    "deaths":10,
+    "assists":10,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":6997746729,
+    "duration":"00:44:47",
+    "hero name":"Slark",
+    "kills":13,
+    "deaths":5,
+    "assists":12,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":6996228597,
+    "duration":"00:57:26",
+    "hero name":"Slark",
+    "kills":11,
+    "deaths":7,
+    "assists":16,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match id":6996127650,
+    "duration":"00:38:37",
+    "hero name":"Spectre",
+    "kills":8,
+    "deaths":4,
+    "assists":26,
+    "party size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match id":6995757571,
+    "duration":"00:41:13",
+    "hero name":"Spectre",
+    "kills":17,
+    "deaths":5,
+    "assists":24,
+    "party size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  }
+]
