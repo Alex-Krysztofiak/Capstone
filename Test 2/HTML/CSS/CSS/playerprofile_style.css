@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Add a font */
+
+body {
+    background: #1a1a1a;
+    min-height: 100vh;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    
+}
+.banner {  
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;   
+    
+}
+.menu {
+    background: #1a1a1a;
+    
+
+}
+.menu ul{
+    padding: 20px;
+    padding-top: 40px;
+}
+.menu li{
+    display: inline;
+    float: left;
+    margin: 0px 40px;
+    
+}
+.menu a{
+    position: relative;
+    display: inline-flex;
+    font-size: 20px;
+    color: #ffffff;
+}
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    display: inline-flex;
+    background: #7d77ff;
+    transition: .3s;
+}
+
+.menu a:hover:after{
+    width: 100%;
+}
+
