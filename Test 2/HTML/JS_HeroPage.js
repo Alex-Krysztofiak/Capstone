@@ -5,7 +5,7 @@ class MySkillDisplay extends React.Component {
        super(props)
        this.state = {
         skillIndex: 0,
-        selectedIndices: [3, 4, 7],
+        selectedIndices: [],
         skills: [],
         isLoading: true,
         
@@ -51,18 +51,21 @@ class MySkillDisplay extends React.Component {
                             //even though this is a map within a render it did not work with the single parent thing 
                             return (
                                <>
-                                     <div name={"name_" + skill_element} key={"3key_" + skill_element + skill_element.name} className="flexChild" >
-                                        {skill_element.name}
-                                     </div> 
+                                    <div name={"name_" + i} key={"key_" + i} className="flexChild" >
+                                       {/* <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1">{skill_element.name}</h1> */}
+                                       <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                    </div> 
+                                     
                                </>
                             )//match return of the if inside map 
                          }//match if
                          else { //found in selectedIndices array  -- add "checked" property
                             return (
                                <>
-                                  <div name={"name_" + skill_element} key={"key_" + skill_element + skill_element.name} className="flexChild" >
-                                    {skill_element.name}
-                                    </div> 
+                                 <div name={"name_" + i} key={"key_" + i} className="flexChild" >
+                                    {/* <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1">{skill_element.name}</h1> */}
+                                    <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                 </div> 
                                </>
                             ) //match return of the else inside map					
                          } //match else
