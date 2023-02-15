@@ -39,6 +39,9 @@ class MySkillDisplay extends React.Component {
      }
     
      render() {
+      
+
+
         if (this.state.isLoading) {
            return (<p>Loading ....</p>)
         } else {
@@ -52,8 +55,24 @@ class MySkillDisplay extends React.Component {
                             return (
                                <>
                                     <div name={"name_" + i} key={"key_" + i} className="flexChild" >
-                                       {/* <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1">{skill_element.name}</h1> */}
+                                       <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1" style={{zIndex: "3"}}>
+                                          
+                                          {(() => {
+                                          switch (skill_element.primary_attribute) {
+                                             case "str":   return <img className="priAttrImg" src={"hero_strength.png"}></img>;
+                                             case "agi": return <img className="priAttrImg" src={"hero_agility.png"}></img>;
+                                             case "int":  return <img className="priAttrImg" src={"hero_intelligence.png"}></img>;
+                                             default:      return "#FFFFFF";
+                                          }
+                                          })()}
+                                          {skill_element.name} 
+                                       </h1>
                                        <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+
+                                       {/* style={{ backgroundImage:`url(${skill_element.img})`,
+                                       backgroundSize: "cover",
+                                       boxShadow: "4px 2px 2px #111111",
+                                       }} */}
                                     </div> 
                                      
                                </>
@@ -62,9 +81,9 @@ class MySkillDisplay extends React.Component {
                          else { //found in selectedIndices array  -- add "checked" property
                             return (
                                <>
-                                 <div name={"name_" + i} key={"key_" + i} className="flexChild" >
+                                 <div name={"name_" + i} key={"key_" + i} className="flexChild" style={{ backgroundImage:`url(${skill_element.img})`}}>
                                     {/* <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1">{skill_element.name}</h1> */}
-                                    <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                    {/* <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img> */}
                                  </div> 
                                </>
                             ) //match return of the else inside map					
