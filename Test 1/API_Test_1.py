@@ -3,6 +3,7 @@ import requests
 import time
 from random import randint
 import pandas as pd
+backslash = "\\"
 
 # Test 1
 """ #Used to test how to display usernames without all the other data
@@ -28,7 +29,7 @@ print("")
  """
 
  # Test 2 (create the hero list json)
-""" url4 = f'https://api.opendota.com/api/heroes'
+url4 = f'https://api.opendota.com/api/heroes'
 r4 = requests.get(url4)
 data4 = json.loads(r4.text)
 
@@ -38,20 +39,22 @@ for hero in data4:
     localized_name = hero['localized_name']
     primary_attr = hero['primary_attr']
     attack_type =  hero['attack_type']
-        
+    img = "HeroImages\\\\" + hero['localized_name'] +  ".png"
+       
     hero_info = {
         'id': id,
         'name': localized_name,
-        'primary attribute': primary_attr,
-        'attack type': attack_type,
+        'primary_attribute': primary_attr,
+        'attack_type': attack_type,
+        'img': img,
             
     }
     hero_list.append(hero_info)
 
 dotadf = pd.DataFrame(hero_list) 
-#print(dotadf)
-#dotadf.to_json('hero_info.json', orient='index', indent=2 )
- """
+print(dotadf)
+dotadf.to_json('Test 2\HTML\heroList.json', orient='records', indent=2 )
+
 #r3 = open('hero_info.json',)
 #data3 = json.load(r3)
 #for x in data3:
@@ -77,5 +80,5 @@ for hero in data4:
 dotadf = pd.DataFrame(hero_list) 
 print(dotadf)
 print(data4[0]['icon'])
-#dotadf.to_json('hero_info.json', orient='index', indent=2 ) """
+dotadf.to_json('JSON_hero_info.json', orient='index', indent=1 ) """
 

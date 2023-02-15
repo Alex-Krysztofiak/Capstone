@@ -23,7 +23,7 @@ steam_id = input("Steam ID:")
 baseurl = f'https://api.opendota.com/api/'
 player = f'players/{steam_id}/'
 endpoint = f''
-heroInfoData = open('Test 1\hero_info.json')
+heroInfoData = open('Test 1\heroInfo.json')
 jsonData = json.load(heroInfoData)
 
 
@@ -67,13 +67,13 @@ def get_recentMatches(response):
                 hero_name = jsonData[x]['name']
         
         match_info = {
-            'match id': match_id,
+            'match_id': match_id,
             'duration': time.strftime("%H:%M:%S", time.gmtime(duration)), #converts the time from seconds to minutes (and seconds) in standard format
-            'hero name': hero_name,
+            'hero_name': hero_name,
             'kills': kills,
             'deaths': deaths,
             'assists': assists,
-            'party size': party_size,  
+            'party_size': party_size,  
             'team': team,   
             'result': result
         }
@@ -99,5 +99,5 @@ get_user(data)
 mainlist.extend(get_recentMatches(data))
 
 dotadf = pd.DataFrame(mainlist) 
-print(dotadf)
-dotadf.to_json('Test 1\matches_recent.json', orient='index', indent=2) 
+#print(dotadf)
+dotadf.to_json('Test 2\HTML\matches_recent.json', orient='records', indent=2) 
