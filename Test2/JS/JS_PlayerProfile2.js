@@ -72,6 +72,26 @@ class MyProfileDisplay extends React.Component {
                                             })()}
                                             {profile.rank_number}
                                             <h2>MMR: {profile.rank_estimate}</h2>
+                                            {(() => {
+                                                switch (profile.rank_name) {
+                                                    case 1:
+                                                        return <img src="https://dota2freaks.com/wp-content/uploads/sites/10/2020/02/dota-2-rank-herald1.png"></img>
+                                                    case 2:
+                                                        return <img src="https://dota2freaks.com/wp-content/uploads/sites/10/2020/02/dota-2-rank-guardian-1.png"></img>
+                                                    case 3:
+                                                        return <img src="https://dota2freaks.com/wp-content/uploads/sites/10/2020/02/dota-2-rank-crusader-1.png"></img>;
+                                                    case 4:
+                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/SeasonalRank4-5.png"></img>;
+                                                    case 5:
+                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/SeasonalRank5-4.png"></img>;
+                                                    case 6:
+                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/SeasonalRank7-1.png"></img>
+                                                    case 7:
+                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/SeasonalRankTop2.png"></img>
+                                                    default:
+                                                        return <img src="https://cdn.shopify.com/s/files/1/2312/2697/products/cali_3.png?v=1576660156"></img>
+                                                }
+                                            })()}
                                         </div>
 
 
