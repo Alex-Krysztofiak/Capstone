@@ -859,5 +859,12 @@
     "primary_attribute":"str",
     "attack_type":"Melee",
     "img":"HeroImages\\\\Primal Beast.png"
+  },
+  {
+    "id":138,
+    "name":"Muerta",
+    "primary_attribute":"int",
+    "attack_type":"Ranged",
+    "img":"HeroImages\\\\Muerta.png"
   }
 ]
