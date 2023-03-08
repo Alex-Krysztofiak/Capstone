@@ -736,5 +736,11 @@
     "name":"Primal Beast",
     "primary attribute":"str",
     "attack type":"Melee"
+  },
+  "123":{
+    "id":138,
+    "name":"Muerta",
+    "primary attribute":"int",
+    "attack type":"Ranged"
   }
 }
