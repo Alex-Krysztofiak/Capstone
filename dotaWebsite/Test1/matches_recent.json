@@ -1,0 +1,222 @@
+[
+  {
+    "match_id":7017648117,
+    "duration":"00:34:10",
+    "hero_name":"Sniper",
+    "kills":16,
+    "deaths":8,
+    "assists":7,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7017464264,
+    "duration":"00:41:56",
+    "hero_name":"Pudge",
+    "kills":5,
+    "deaths":14,
+    "assists":9,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7017296134,
+    "duration":"00:44:48",
+    "hero_name":"Rubick",
+    "kills":13,
+    "deaths":6,
+    "assists":4,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7016259866,
+    "duration":"00:36:42",
+    "hero_name":"Rubick",
+    "kills":10,
+    "deaths":12,
+    "assists":10,
+    "party_size":2,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7016100178,
+    "duration":"00:46:01",
+    "hero_name":"Puck",
+    "kills":14,
+    "deaths":9,
+    "assists":12,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7016053944,
+    "duration":"00:38:04",
+    "hero_name":"Legion Commander",
+    "kills":7,
+    "deaths":9,
+    "assists":10,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7014669118,
+    "duration":"00:34:39",
+    "hero_name":"Pudge",
+    "kills":7,
+    "deaths":8,
+    "assists":13,
+    "party_size":3,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7014613355,
+    "duration":"00:41:20",
+    "hero_name":"Riki",
+    "kills":6,
+    "deaths":13,
+    "assists":15,
+    "party_size":3,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7014554054,
+    "duration":"00:41:02",
+    "hero_name":"Kunkka",
+    "kills":2,
+    "deaths":11,
+    "assists":6,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7013123928,
+    "duration":"00:33:25",
+    "hero_name":"Invoker",
+    "kills":6,
+    "deaths":8,
+    "assists":6,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7012956183,
+    "duration":"00:33:39",
+    "hero_name":"Invoker",
+    "kills":5,
+    "deaths":2,
+    "assists":9,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7012847443,
+    "duration":"00:45:37",
+    "hero_name":"Shadow Fiend",
+    "kills":13,
+    "deaths":5,
+    "assists":4,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7011173567,
+    "duration":"00:31:12",
+    "hero_name":"Kunkka",
+    "kills":5,
+    "deaths":3,
+    "assists":24,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7008542288,
+    "duration":"00:34:24",
+    "hero_name":"Visage",
+    "kills":7,
+    "deaths":11,
+    "assists":9,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7008383525,
+    "duration":"00:33:14",
+    "hero_name":"Shadow Fiend",
+    "kills":6,
+    "deaths":2,
+    "assists":2,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7008186127,
+    "duration":"00:56:25",
+    "hero_name":"Storm Spirit",
+    "kills":20,
+    "deaths":9,
+    "assists":12,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7006995403,
+    "duration":"00:41:53",
+    "hero_name":"Shadow Fiend",
+    "kills":8,
+    "deaths":4,
+    "assists":7,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  },
+  {
+    "match_id":7006914664,
+    "duration":"00:42:19",
+    "hero_name":"Shadow Fiend",
+    "kills":6,
+    "deaths":7,
+    "assists":7,
+    "party_size":1,
+    "team":"Radiant",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7005673338,
+    "duration":"00:46:43",
+    "hero_name":"Storm Spirit",
+    "kills":14,
+    "deaths":7,
+    "assists":17,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Won Match"
+  },
+  {
+    "match_id":7005650933,
+    "duration":"00:36:28",
+    "hero_name":"Weaver",
+    "kills":6,
+    "deaths":10,
+    "assists":11,
+    "party_size":1,
+    "team":"Dire",
+    "result":"Lost Match"
+  }
+]
