@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import  login_required, current_user
 from .models import Note, User
-from .jsonLoader import main_request, get_recentMatches, get_user
+from .jsonLoader2 import Player
 #from .auth import auth
 
 views = Blueprint('views', __name__)
@@ -30,9 +30,11 @@ def blog():
 #@login_required
 def player():
     if request.method == 'POST':
-        
-        return redirect(url_for("views.player", user=current_user))
-
+        player_id = request.form.get("playerid")
+        print(player_id)
+        p = Player(str(player_id))
+        p.display_player()
+        return redirect(url_for("views.user", user=current_user))
     return render_template("playerprofile.html", user=current_user)
 
 
@@ -42,6 +44,12 @@ def player():
 @views.route('/userprofile', methods=['GET', 'POST']) 
 @login_required
 def user():
+    if request.method == 'POST':
+        player_id = request.form.get("playerid")
+        print(player_id)
+        p = Player(str(player_id))
+        p.display_player()
+        return redirect(url_for("views.user", user=current_user))
     return render_template("userprofile.html", user=current_user)
 
 @views.route('/underconstruction', methods=['GET', 'POST'])

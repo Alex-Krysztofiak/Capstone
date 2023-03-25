@@ -19,9 +19,9 @@ def login():
                 login_user(user, remember=True)
                 return redirect(url_for('views.user'))
             else:
-                flash('Incorrect password.', category='error')
+                flash('Incorrect password.', category='error', email=email)
         else:
-            flash('Email does not exist.', category='error')
+            flash('Email does not exist.', category='error', email=email)
 
     return render_template("login.html", user=current_user)
 
@@ -36,15 +36,15 @@ def sign_up():
 
         user = User.query.filter_by(email=email).first()
         if user:
-            flash('Email already tied to an account', category='error')
+            flash('Email already tied to an account', category='error', email=email, firstname=firstname, sid=sid)
         elif len(email) < 1:
-            flash('Please enter your email', category='error')
+            flash('Please enter your email', category='error', email=email, firstname=firstname, sid=sid)
         elif len(firstname) < 1:
-            flash('Please enter your name', category='error')
+            flash('Please enter your name', category='error', email=email, firstname=firstname, sid=sid)
         elif password1 != password2:
-            flash('Passwords don\'t match', category='error')
+            flash('Passwords don\'t match', category='error', email=email, firstname=firstname, sid=sid)
         elif len(password1) < 7:
-            flash('Passwords have to be atleast 7 characters', category='error')
+            flash('Passwords have to be atleast 7 characters', category='error', email=email, firstname=firstname, sid=sid)
         else:
             new_user = User(email=email, firstname=firstname, password=generate_password_hash(
                 password1, method='sha256'))
@@ -60,4 +60,4 @@ def sign_up():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('auth.login'))
+    return redirect(url_for('views.home'))
