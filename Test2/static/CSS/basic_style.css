@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Add a font */
+.banner {  
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#1a1a1a, #7d77ff);
+    box-sizing: border-box;
+    overflow: hidden;  
+    background-position: center;
+    background-size: cover; 
+    
+}
+.menu {
+    /* background: #1a1a1a; */
+    padding-bottom: 40px;
+
+}
+.menu ul{
+    padding: 20px;
+    padding-top: 40px;
+}
+.menu li{
+    display: inline;
+    float: left;
+    margin: 0px 30px;
+    
+}
+.menu li#searchbar{
+    float: right;
+}
+.menu a{
+    position: relative;
+    display: inline-flex;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 2px;
+}
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    display: inline-flex;
+    background: #7d77ff;
+    transition: .3s;
+}
+
+.menu a:hover:after{
+    width: 100%;
+}
+
+.btn-playerid {
+    position: relative;
+    display: inline-flex;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 2px;
+    transition: .3s;
+ }
+
+ .btn-playerid:hover {
+    cursor: pointer;
+    border: 2px solid #7d77ff;
+ }
+ .form {
+    position: relative;
+    display: inline-flex;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #464646;
+    border: 2px solid #7d77ff;
+    border-radius: 5px;
+    padding: 2px;
+ }
+.alert-danger {
+    width: 100%;
+    height: 35px;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    background-color: red;
+    color: #ffffff;
+ }

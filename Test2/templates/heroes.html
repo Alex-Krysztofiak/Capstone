@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/heropage_style.css') }}"> 
+{% endblock %}
+
+
+{% block title %} 
+Heroes
+{% endblock %}
+
+{% block staticContent %} 
+<h1>This will have a search bar and buttons</h1>
+{% endblock %}
+
+{% block flexContent %} 
+<div class="flexContainer" id="divSkillDisplay">
+   
+</div> 
+{% endblock %}
+
+{% block javascript %} 
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}"></script>
+{% endblock %}
