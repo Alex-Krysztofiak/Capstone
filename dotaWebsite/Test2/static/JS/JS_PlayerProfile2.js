@@ -13,6 +13,7 @@ class MyProfileDisplay extends React.Component {
 
 
 
+
     componentDidMount() {
         fetch('static\\JSON\\heroList.json')
             .then(response => response.json())
@@ -31,6 +32,7 @@ class MyProfileDisplay extends React.Component {
             return (<p>Loading ....</p>)
         } else {
             return (
+                
                 <>
                     <div key="profile" className="playerProfile">
                         {
@@ -63,8 +65,10 @@ class MyProfileDisplay extends React.Component {
                                                     case 5:
                                                         return "Legend: ";
                                                     case 6:
-                                                        return "Divine: ";
+                                                        return "Ancient: ";
                                                     case 7:
+                                                        return "Divine: ";
+                                                    case 8:
                                                         return "Immortal: ";
                                                     default:
                                                         return "unranked";
@@ -88,8 +92,10 @@ class MyProfileDisplay extends React.Component {
                                                     case 5:
                                                         return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/SeasonalRank5-4.png"></img>;
                                                     case 6:
-                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/SeasonalRank7-1.png"></img>
+                                                        return <img src="https://cdn-0.dota2freaks.com/wp-content/uploads/sites/10/2020/02/dota-2-rank-ancient-3.png"></img>;
                                                     case 7:
+                                                        return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/SeasonalRank7-1.png"></img>
+                                                    case 8:
                                                         return <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/a/ad/SeasonalRankTop2.png"></img>
                                                     default:
                                                         return <img src="https://cdn.shopify.com/s/files/1/2312/2697/products/cali_3.png?v=1576660156"></img>
@@ -143,27 +149,33 @@ class MyProfileDisplay extends React.Component {
                                                 )
                                             }
                                         })}
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        <div key={"key_" + match.match_id + match.hero_name} className="matchInfo">
                                             {match.hero_name}
                                         </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
-                                            {match.match_id}<br></br>
+                                        <div key={"key_" + match.match_id + match.duration} className="matchInfo">
+                                        {/* <form method="POST">   
+                                            <button id="matchid-btn" type="submit" class="btn-playerid">
+                                                {match.match_id}
+                                            </button>
+                                        </form> */}
+                                            {match.match_id} <br></br>
                                             {match.duration}
+
                                         </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        <div key={"key_" + match.match_id + match.kills} className="matchInfo">
                                             {match.kills}
                                         </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        <div key={"key_" + match.match_id + match.deaths} className="matchInfo">
                                             {match.deaths}
                                         </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        <div key={"key_" + match.match_id+ match.assists} className="matchInfo">
                                             {match.assists}
                                         </div>
                                         <div key={"key_" + match.match_id} className="matchInfo">
                                             {match.team} <br></br>
                                             {match.result}
                                         </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        <div key={"key_" + match.match_id + match.party_size} className="matchInfo">
                                             {match.party_size}
                                         </div>
                                     </div>

@@ -23,7 +23,10 @@
                     {% if user.is_authenticated %}
                     
                     <li class="menu__item">
-                        <a  href="userprofile" title="">Profile</a>
+                        <form method="POST" id="profile">
+                            <a  href="playerprofile" title="">Profile</a>
+                        </form>
+                        
                     </li>
                     <li class="menu__item">
                         <a href="heroes" title="">Explore Heroes</a>
@@ -35,7 +38,7 @@
                         <a href="logout" title="logout">Logout</a> 
                     </li>  
                     <li class="menu__item" id="searchbar">
-                        <form method="POST">
+                        <form method="POST" id="search">
                             <div class="form-group">
                                 <label for="playerid"></label>
                                 <input 
@@ -43,9 +46,9 @@
                                     class="form" 
                                     id="playerid" 
                                     name="playerid" 
-                                    placeholder="Search player"
+                                    
                                 />
-                                <button id="playerid-btn" type="submit" class="btn-playerid" onClick="runPlayerId()"">
+                                <button id="playerid-btn" type="submit" class="btn-playerid" onClick="runPlayerId()">
                                     Search player
                                 </button>
                             </div>
@@ -70,16 +73,12 @@
                 'error' %}
                 <div class="alert alert-danger alter-dismissable fade show" role="alert">
                   {{ message }}
-                  <button type="button" class="close" data-dismiss="alert">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  
                 </div>
                 {% else %}
                 <div class="alert alert-success alter-dismissable fade show" role="alert">
                   {{ message }}
-                  <button type="button" class="close" data-dismiss="alert">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  
                 </div>
                 {% endif %} {% endfor %} {% endif %} {% endwith %}
             
