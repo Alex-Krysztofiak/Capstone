@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/playerprofile_style.css') }}"> 
+{% endblock %}
+
+
+{% block title %} 
+User Profile
+{% endblock %}
+
+{% block staticContent %} 
+
+{% endblock %}
+
+{% block flexContent %} 
+<div class="flexContainer1" id="divRecentMatchDisplay">  <!-- This is going to be the recent matches  -->
+                
+</div>     
+{% endblock %}
+
+{% block javascript %} 
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_PlayerProfile2.js') }}"></script>
+{% endblock %}
