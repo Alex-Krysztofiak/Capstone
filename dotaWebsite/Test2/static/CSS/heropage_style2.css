@@ -1,0 +1,90 @@
+html,body {
+    height: 100%;
+}
+
+.container{
+    border: 2px solid #ff8577;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.staticPart{
+    margin: 10px;
+    padding: 15px;
+    color: #ffffff;
+    border: 2px solid #7d77ff; 
+}
+.flexContainer{
+    border: 2px solid #8eff77;
+    
+    width: 80vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.flexChild{
+    margin: 2vh 0vw;
+    width: 16vw;
+    height: 25vh;
+    color: #adadad;
+
+    position: relative;
+    /* border: 2px solid #0ab510; */
+    background-color: transparent;
+    
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    /* border: 2px solid #7d77ff;  */   
+}
+
+.flexChildImg {
+    /* border: 2px solid #7d77ff; */
+    position: absolute;
+    top: 0;
+    height: 75%;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
+}
+.flexChildInfo{
+    /* border: 2px solid #db5511; */
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+    
+  
+}
+.flexChildInfo2 img{
+    /* border: 2px solid #ffb189; */
+    
+    bottom: 0;
+    width: 2.5vw;
+    height: 2.5vw;
+    z-index: 2;
+    
+}
+.flexChildInfo2 h1{
+    /* border: 2px solid #ffb189; */
+    position: absolute;
+    bottom: 0;
+
+    width: 13vw;
+    color: #ffffff;  
+    z-index: 2;
+    font-size: 1.2vw;
+}
+
