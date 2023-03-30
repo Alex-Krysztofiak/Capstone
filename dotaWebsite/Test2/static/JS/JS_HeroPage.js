@@ -50,20 +50,28 @@ class MySkillDisplay extends React.Component {
                             return (
                                <>
                                     <div name={"name_" + i} key={"key_" + i} className="flexChild" >
-                                       <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1" style={{zIndex: "3"}}>
-                                          
-                                          {(() => {
-                                          switch (skill_element.primary_attribute) {
-                                             case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
-                                             case "agi": return <img className="priAttrImg" src={"static\\MiscImages\\hero_agility.png"}></img>;
-                                             case "int":  return <img className="priAttrImg" src={"static\\MiscImages\\hero_intelligence.png"}></img>;
-                                             default:      return "#FFFFFF";
-                                          }
-                                          })()}
-                                          {skill_element.name} 
-                                       </h1>
+                                       <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                       <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo">
+                                          <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
+                                             {(() => {
+                                             switch (skill_element.primary_attribute) {
+                                                case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
+                                                case "agi": return <img className="priAttrImg" src={"static\\MiscImages\\hero_agility.png"}></img>;
+                                                case "int":  return <img className="priAttrImg" src={"static\\MiscImages\\hero_intelligence.png"}></img>;
+                                                default:      return "#FFFFFF";
+                                             }
+                                             })()}
+                                    
+                                          </div>
+                                          <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2" >
+                                             <h1>{skill_element.name}</h1>
+                                          </div> 
+                                          {/* <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
+                                             <h2>V</h2>
+                                             <a href={skill_element.link} target="_blank"><h1>MORE INFO</h1></a>
+                                          </div> */}
+                                       </div>
                                        
-                                       <a href={skill_element.link} target="_blank"><img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img></a>
                                     </div> 
                                      
                                </>
@@ -72,10 +80,7 @@ class MySkillDisplay extends React.Component {
                          else { //found in selectedIndices array  -- add "checked" property
                             return (
                                <>
-                                 <div name={"name_" + i} key={"key_" + i} className="flexChild" style={{ backgroundImage:`url(${skill_element.img})`}}>
-                                    {/* <h1 name={"h1name_" + i} key={"h1key_" + i} className="flexChildH1">{skill_element.name}</h1> */}
-                                    {/* <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img> */}
-                                 </div> 
+                                 
                                </>
                             ) //match return of the else inside map					
                          } //match else
