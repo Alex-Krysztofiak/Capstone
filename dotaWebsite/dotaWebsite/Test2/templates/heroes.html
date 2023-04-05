@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/heropage_style2.css') }}"> 
+{% endblock %}
+
+
+{% block title %} 
+Heroes
+{% endblock %}
+
+{% block staticContent %} 
+<div>
+    <ul> 
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_strength.png"></a> <!-- make radiobutton -->
+        </li>
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_agility.png"></a>
+        </li>
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_intelligence.png"></a> 
+        </li>  
+        <li id="searchbar">
+            <div class="form-group">
+                <label for="playerid"></label>
+                <input 
+                    type="text" 
+                    class="form" 
+                    id="playerid" 
+                    name="playerid" 
+                />
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block flexContent %} 
+<div class="flexContainer" id="divSkillDisplay">
+   
+</div> 
+{% endblock %}
+
+{% block javascript %} 
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}"></script>
+{% endblock %}

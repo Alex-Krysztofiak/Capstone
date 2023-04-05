@@ -1,0 +1,162 @@
+*{
+    font-family: 'Montserrat', sans-serif;  
+}
+.dynamicPart {
+    padding: 0px 24px 24px 24px;
+
+}
+ .playerProfile{
+    height: 200px;
+    padding: 24px;
+    width: 100%;
+    
+    border: 2px solid #7d77ff;
+    border-radius: 15px;
+    background-color: #8d88ff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+} 
+.playerProfileInfo{
+    height: 100%;
+    
+    color: #ffffff;
+    border: 2px solid #b3b1ce;
+    position: relative;
+}
+.playerProfileInfo img{
+    height: 150px;
+    border-radius: 15px;
+    position: relative;
+}  
+
+/* .flexChild{
+    margin: 10px;
+    padding: 0px;
+    width: 100%;
+    height: 75px;
+    color: #adadad;
+    position: relative;
+    border: 2px solid #ff7777;  
+  
+} */
+/* 
+.gameInfoBox{
+    float: left;
+    border: 2px solid #5b56b8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 90px;
+    margin: 0px 10px;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.gameInfoBoxKey{
+    float: left;
+    border: 2px solid #5b56b8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 70px;
+    margin: 0px 10px;
+    padding: 0px;
+    justify-content: space-between;
+   
+   
+}
+.matchInfo{
+    border: 2px solid #413d83;
+    width: 120px;
+    height: 100%;
+    color: white;
+    font-size: 20px;  
+    text-align: center;  
+    padding-top: 5px;
+}
+.matchInfoKey{
+    border: 2px solid #413d83;
+    width: 120px;
+    height: 100%;
+    color: white;
+    font-size: 20px;    
+    text-align: center;
+}
+.matchInfoImg{
+    border: 2px solid #131225;
+    height: auto;
+    width: 150px;    
+} */
+
+/* peerInfoBox, peerInfo <table>, <th>, and <td>*/
+/* mpInfoBox, mpInfo <table> <thead> <tbody> <tfoot> <tr> <td> <th>*/
+.MatchesTable {
+    float: left;
+    width: 60%;
+}
+
+table {
+    width: 36%;
+    /* margin: 12px; */
+    margin-top: 16px;
+    min-width: 300px;
+
+    float:right;
+    text-align: center;
+    border-collapse: collapse;
+
+    color: #f1f1f1;
+    font-size: 18px;
+
+}
+table caption {
+    width: 50%;
+    height: 40px;
+    font-size: 2rem;
+    margin: 6px 0px;
+    padding-left: 6px;
+    background-color: #545281;
+    text-align: left;
+    border-radius: 15px;
+    
+}
+thead {
+    height: 32px;
+    background-color: #645cff;
+    width: 25%;
+    font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;   
+}
+.MatchesTable thead {
+    width: 16.67%
+}
+thead th:first-child {
+    border-top-left-radius: 15px;
+} 
+thead th:last-child {
+    border-top-right-radius: 15px;
+}
+tbody tr:nth-child(odd) {
+    background-color: #7d77ff;
+    
+}  
+tbody tr:nth-child(even) {
+    background-color: #8d88ff; 
+}
+
+td {
+    height: 72px;
+    padding: 5px;
+}
+td img{
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #111111;
+    vertical-align: bottom;   
+}
