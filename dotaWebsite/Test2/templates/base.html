@@ -12,6 +12,10 @@
         <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
 		<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>{% block title %} Base {% endblock %}</title>
 
     </head>
@@ -21,15 +25,13 @@
             <div class="menu">
                 <ul class="menu__list">
                     {% if user.is_authenticated %}
-                    
                     <li class="menu__item">
                         <form method="POST" id="profile">
-                            <a  href="playerprofile" title="">Profile</a>
+                            <a  href="player_{{user.sid}}" title="">Profile</a>
                         </form>
-                        
                     </li>
                     <li class="menu__item">
-                        <a href="heroes" title="">Explore Heroes</a>
+                        <a href="heroes" title="">Heroes</a>
                     </li>
                     <li class="menu__item">
                         <a href="blog" title="">Blog</a>
@@ -48,7 +50,7 @@
                                     name="playerid" 
                                     
                                 />
-                                <button id="playerid-btn" type="submit" class="btn-playerid" onClick="runPlayerId()">
+                                <button id="playerid-btn" type="submit" class="btn-playerid" >
                                     Search
                                 </button>
                             </div>
@@ -58,10 +60,13 @@
 
                     {% else %}
                     <li class="menu__item">
-                        <a href="/" title="">Home Page</a>
+                        <a href="/" title="">Home</a>
                     </li>
                     <li class="menu__item">
                         <a href="login" title="Login">Login</a>
+                    </li> 
+                    <li class="menu__item">
+                        <a href="sign_up" title="Signup">Sign up</a>
                     </li> 
                     
                     {% endif %}
@@ -83,8 +88,10 @@
                 {% endif %} {% endfor %} {% endif %} {% endwith %}
             
             <div class="staticPart">
-              {% block staticContent %} This is a static Part {% endblock %}
+              {% block staticContent %} 
+              {% endblock %}
             </div>
+            
             <div class="dynamicPart">
               {% block flexContent %} This will have Flex(React) Content {% endblock %}
             </div> 
@@ -98,11 +105,11 @@
     <script type="text/javascript">
        
 
-        const runPlayerId = () => {
-            const playerId = document.getElementById("playerid").value;
-            // window.alert("Player Id: " + playerId);
-            return playerId;
-        };
+        // const runPlayerId = () => {
+        //     const playerId = document.getElementById("playerid").value;
+        //     // window.alert("Player Id: " + playerId);
+        //     return playerId;
+        // };
     </script>
 </html>
 
