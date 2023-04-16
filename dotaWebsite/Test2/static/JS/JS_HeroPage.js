@@ -49,10 +49,10 @@ class MySkillDisplay extends React.Component {
                             //even though this is a map within a render it did not work with the single parent thing 
                             return (
                                <>
-                                    <div name={"name_" + i} key={"key_" + i} className="flexChild" >
+                                    <div name={"name_" + i} key={"key_" + i} className="flexChild" id={skill_element.primary_attribute}>
                                        <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
                                        <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo">
-                                          <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
+                                          {/* <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
                                              {(() => {
                                              switch (skill_element.primary_attribute) {
                                                 case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
@@ -62,17 +62,20 @@ class MySkillDisplay extends React.Component {
                                              }
                                              })()}
                                     
-                                          </div>
-                                          <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2" >
-                                             <h1>{skill_element.name}</h1>
-                                          </div> 
+                                          </div> */}
+                                           
+                                          <h1>{skill_element.name}</h1> 
+                                          <img src={'static\\MiscImages\\dropdown.jpg'}></img>
+                                         
+                                             
+                                       </div> 
                                           {/* <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
                                              <h2>V</h2>
                                              <a href={skill_element.link} target="_blank"><h1>MORE INFO</h1></a>
                                           </div> */}
                                        </div>
                                        
-                                    </div> 
+                                    
                                      
                                </>
                             )//match return of the if inside map 

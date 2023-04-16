@@ -1,5 +1,5 @@
-[
-  {
+{
+  "0":{
     "id":1,
     "name":"Anti-Mage",
     "primary_attribute":"agi",
@@ -7,7 +7,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Anti-Mage.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Anti-Mage"
   },
-  {
+  "1":{
     "id":2,
     "name":"Axe",
     "primary_attribute":"str",
@@ -15,7 +15,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Axe.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Axe"
   },
-  {
+  "2":{
     "id":3,
     "name":"Bane",
     "primary_attribute":"int",
@@ -23,7 +23,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Bane.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Bane"
   },
-  {
+  "3":{
     "id":4,
     "name":"Bloodseeker",
     "primary_attribute":"agi",
@@ -31,7 +31,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Bloodseeker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Bloodseeker"
   },
-  {
+  "4":{
     "id":5,
     "name":"Crystal Maiden",
     "primary_attribute":"int",
@@ -39,7 +39,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Crystal Maiden.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Crystal Maiden"
   },
-  {
+  "5":{
     "id":6,
     "name":"Drow Ranger",
     "primary_attribute":"agi",
@@ -47,7 +47,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Drow Ranger.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Drow Ranger"
   },
-  {
+  "6":{
     "id":7,
     "name":"Earthshaker",
     "primary_attribute":"str",
@@ -55,7 +55,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Earthshaker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Earthshaker"
   },
-  {
+  "7":{
     "id":8,
     "name":"Juggernaut",
     "primary_attribute":"agi",
@@ -63,7 +63,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Juggernaut.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Juggernaut"
   },
-  {
+  "8":{
     "id":9,
     "name":"Mirana",
     "primary_attribute":"agi",
@@ -71,7 +71,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Mirana.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Mirana"
   },
-  {
+  "9":{
     "id":10,
     "name":"Morphling",
     "primary_attribute":"agi",
@@ -79,7 +79,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Morphling.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Morphling"
   },
-  {
+  "10":{
     "id":11,
     "name":"Shadow Fiend",
     "primary_attribute":"agi",
@@ -87,7 +87,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Shadow Fiend.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Shadow Fiend"
   },
-  {
+  "11":{
     "id":12,
     "name":"Phantom Lancer",
     "primary_attribute":"agi",
@@ -95,7 +95,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Phantom Lancer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Phantom Lancer"
   },
-  {
+  "12":{
     "id":13,
     "name":"Puck",
     "primary_attribute":"int",
@@ -103,7 +103,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Puck.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Puck"
   },
-  {
+  "13":{
     "id":14,
     "name":"Pudge",
     "primary_attribute":"str",
@@ -111,7 +111,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Pudge.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Pudge"
   },
-  {
+  "14":{
     "id":15,
     "name":"Razor",
     "primary_attribute":"agi",
@@ -119,7 +119,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Razor.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Razor"
   },
-  {
+  "15":{
     "id":16,
     "name":"Sand King",
     "primary_attribute":"str",
@@ -127,7 +127,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Sand King.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Sand King"
   },
-  {
+  "16":{
     "id":17,
     "name":"Storm Spirit",
     "primary_attribute":"int",
@@ -135,7 +135,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Storm Spirit.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Storm Spirit"
   },
-  {
+  "17":{
     "id":18,
     "name":"Sven",
     "primary_attribute":"str",
@@ -143,7 +143,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Sven.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Sven"
   },
-  {
+  "18":{
     "id":19,
     "name":"Tiny",
     "primary_attribute":"str",
@@ -151,7 +151,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Tiny.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Tiny"
   },
-  {
+  "19":{
     "id":20,
     "name":"Vengeful Spirit",
     "primary_attribute":"agi",
@@ -159,7 +159,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Vengeful Spirit.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Vengeful Spirit"
   },
-  {
+  "20":{
     "id":21,
     "name":"Windranger",
     "primary_attribute":"int",
@@ -167,7 +167,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Windranger.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Windranger"
   },
-  {
+  "21":{
     "id":22,
     "name":"Zeus",
     "primary_attribute":"int",
@@ -175,7 +175,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Zeus.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Zeus"
   },
-  {
+  "22":{
     "id":23,
     "name":"Kunkka",
     "primary_attribute":"str",
@@ -183,7 +183,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Kunkka.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Kunkka"
   },
-  {
+  "23":{
     "id":25,
     "name":"Lina",
     "primary_attribute":"int",
@@ -191,7 +191,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lina.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lina"
   },
-  {
+  "24":{
     "id":26,
     "name":"Lion",
     "primary_attribute":"int",
@@ -199,7 +199,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lion.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lion"
   },
-  {
+  "25":{
     "id":27,
     "name":"Shadow Shaman",
     "primary_attribute":"int",
@@ -207,7 +207,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Shadow Shaman.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Shadow Shaman"
   },
-  {
+  "26":{
     "id":28,
     "name":"Slardar",
     "primary_attribute":"str",
@@ -215,7 +215,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Slardar.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Slardar"
   },
-  {
+  "27":{
     "id":29,
     "name":"Tidehunter",
     "primary_attribute":"str",
@@ -223,7 +223,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Tidehunter.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Tidehunter"
   },
-  {
+  "28":{
     "id":30,
     "name":"Witch Doctor",
     "primary_attribute":"int",
@@ -231,7 +231,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Witch Doctor.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Witch Doctor"
   },
-  {
+  "29":{
     "id":31,
     "name":"Lich",
     "primary_attribute":"int",
@@ -239,7 +239,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lich.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lich"
   },
-  {
+  "30":{
     "id":32,
     "name":"Riki",
     "primary_attribute":"agi",
@@ -247,7 +247,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Riki.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Riki"
   },
-  {
+  "31":{
     "id":33,
     "name":"Enigma",
     "primary_attribute":"int",
@@ -255,7 +255,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Enigma.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Enigma"
   },
-  {
+  "32":{
     "id":34,
     "name":"Tinker",
     "primary_attribute":"int",
@@ -263,7 +263,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Tinker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Tinker"
   },
-  {
+  "33":{
     "id":35,
     "name":"Sniper",
     "primary_attribute":"agi",
@@ -271,7 +271,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Sniper.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Sniper"
   },
-  {
+  "34":{
     "id":36,
     "name":"Necrophos",
     "primary_attribute":"int",
@@ -279,7 +279,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Necrophos.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Necrophos"
   },
-  {
+  "35":{
     "id":37,
     "name":"Warlock",
     "primary_attribute":"int",
@@ -287,7 +287,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Warlock.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Warlock"
   },
-  {
+  "36":{
     "id":38,
     "name":"Beastmaster",
     "primary_attribute":"str",
@@ -295,7 +295,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Beastmaster.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Beastmaster"
   },
-  {
+  "37":{
     "id":39,
     "name":"Queen of Pain",
     "primary_attribute":"int",
@@ -303,7 +303,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Queen of Pain.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Queen of Pain"
   },
-  {
+  "38":{
     "id":40,
     "name":"Venomancer",
     "primary_attribute":"agi",
@@ -311,7 +311,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Venomancer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Venomancer"
   },
-  {
+  "39":{
     "id":41,
     "name":"Faceless Void",
     "primary_attribute":"agi",
@@ -319,7 +319,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Faceless Void.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Faceless Void"
   },
-  {
+  "40":{
     "id":42,
     "name":"Wraith King",
     "primary_attribute":"str",
@@ -327,7 +327,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Wraith King.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Wraith King"
   },
-  {
+  "41":{
     "id":43,
     "name":"Death Prophet",
     "primary_attribute":"int",
@@ -335,7 +335,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Death Prophet.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Death Prophet"
   },
-  {
+  "42":{
     "id":44,
     "name":"Phantom Assassin",
     "primary_attribute":"agi",
@@ -343,7 +343,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Phantom Assassin.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Phantom Assassin"
   },
-  {
+  "43":{
     "id":45,
     "name":"Pugna",
     "primary_attribute":"int",
@@ -351,7 +351,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Pugna.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Pugna"
   },
-  {
+  "44":{
     "id":46,
     "name":"Templar Assassin",
     "primary_attribute":"agi",
@@ -359,7 +359,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Templar Assassin.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Templar Assassin"
   },
-  {
+  "45":{
     "id":47,
     "name":"Viper",
     "primary_attribute":"agi",
@@ -367,7 +367,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Viper.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Viper"
   },
-  {
+  "46":{
     "id":48,
     "name":"Luna",
     "primary_attribute":"agi",
@@ -375,7 +375,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Luna.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Luna"
   },
-  {
+  "47":{
     "id":49,
     "name":"Dragon Knight",
     "primary_attribute":"str",
@@ -383,7 +383,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Dragon Knight.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Dragon Knight"
   },
-  {
+  "48":{
     "id":50,
     "name":"Dazzle",
     "primary_attribute":"int",
@@ -391,7 +391,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Dazzle.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Dazzle"
   },
-  {
+  "49":{
     "id":51,
     "name":"Clockwerk",
     "primary_attribute":"str",
@@ -399,7 +399,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Clockwerk.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Clockwerk"
   },
-  {
+  "50":{
     "id":52,
     "name":"Leshrac",
     "primary_attribute":"int",
@@ -407,7 +407,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Leshrac.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Leshrac"
   },
-  {
+  "51":{
     "id":53,
     "name":"Nature's Prophet",
     "primary_attribute":"int",
@@ -415,7 +415,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Nature's Prophet.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Nature's Prophet"
   },
-  {
+  "52":{
     "id":54,
     "name":"Lifestealer",
     "primary_attribute":"str",
@@ -423,7 +423,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lifestealer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lifestealer"
   },
-  {
+  "53":{
     "id":55,
     "name":"Dark Seer",
     "primary_attribute":"int",
@@ -431,7 +431,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Dark Seer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Dark Seer"
   },
-  {
+  "54":{
     "id":56,
     "name":"Clinkz",
     "primary_attribute":"agi",
@@ -439,7 +439,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Clinkz.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Clinkz"
   },
-  {
+  "55":{
     "id":57,
     "name":"Omniknight",
     "primary_attribute":"str",
@@ -447,7 +447,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Omniknight.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Omniknight"
   },
-  {
+  "56":{
     "id":58,
     "name":"Enchantress",
     "primary_attribute":"int",
@@ -455,7 +455,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Enchantress.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Enchantress"
   },
-  {
+  "57":{
     "id":59,
     "name":"Huskar",
     "primary_attribute":"str",
@@ -463,7 +463,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Huskar.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Huskar"
   },
-  {
+  "58":{
     "id":60,
     "name":"Night Stalker",
     "primary_attribute":"str",
@@ -471,7 +471,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Night Stalker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Night Stalker"
   },
-  {
+  "59":{
     "id":61,
     "name":"Broodmother",
     "primary_attribute":"agi",
@@ -479,7 +479,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Broodmother.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Broodmother"
   },
-  {
+  "60":{
     "id":62,
     "name":"Bounty Hunter",
     "primary_attribute":"agi",
@@ -487,7 +487,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Bounty Hunter.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Bounty Hunter"
   },
-  {
+  "61":{
     "id":63,
     "name":"Weaver",
     "primary_attribute":"agi",
@@ -495,7 +495,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Weaver.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Weaver"
   },
-  {
+  "62":{
     "id":64,
     "name":"Jakiro",
     "primary_attribute":"int",
@@ -503,7 +503,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Jakiro.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Jakiro"
   },
-  {
+  "63":{
     "id":65,
     "name":"Batrider",
     "primary_attribute":"int",
@@ -511,7 +511,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Batrider.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Batrider"
   },
-  {
+  "64":{
     "id":66,
     "name":"Chen",
     "primary_attribute":"int",
@@ -519,7 +519,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Chen.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Chen"
   },
-  {
+  "65":{
     "id":67,
     "name":"Spectre",
     "primary_attribute":"agi",
@@ -527,7 +527,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Spectre.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Spectre"
   },
-  {
+  "66":{
     "id":68,
     "name":"Ancient Apparition",
     "primary_attribute":"int",
@@ -535,7 +535,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Ancient Apparition.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Ancient Apparition"
   },
-  {
+  "67":{
     "id":69,
     "name":"Doom",
     "primary_attribute":"str",
@@ -543,7 +543,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Doom.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Doom"
   },
-  {
+  "68":{
     "id":70,
     "name":"Ursa",
     "primary_attribute":"agi",
@@ -551,7 +551,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Ursa.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Ursa"
   },
-  {
+  "69":{
     "id":71,
     "name":"Spirit Breaker",
     "primary_attribute":"str",
@@ -559,7 +559,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Spirit Breaker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Spirit Breaker"
   },
-  {
+  "70":{
     "id":72,
     "name":"Gyrocopter",
     "primary_attribute":"agi",
@@ -567,7 +567,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Gyrocopter.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Gyrocopter"
   },
-  {
+  "71":{
     "id":73,
     "name":"Alchemist",
     "primary_attribute":"str",
@@ -575,7 +575,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Alchemist.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Alchemist"
   },
-  {
+  "72":{
     "id":74,
     "name":"Invoker",
     "primary_attribute":"int",
@@ -583,7 +583,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Invoker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Invoker"
   },
-  {
+  "73":{
     "id":75,
     "name":"Silencer",
     "primary_attribute":"int",
@@ -591,7 +591,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Silencer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Silencer"
   },
-  {
+  "74":{
     "id":76,
     "name":"Outworld Destroyer",
     "primary_attribute":"int",
@@ -599,7 +599,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Outworld Destroyer.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Outworld Destroyer"
   },
-  {
+  "75":{
     "id":77,
     "name":"Lycan",
     "primary_attribute":"str",
@@ -607,7 +607,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lycan.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lycan"
   },
-  {
+  "76":{
     "id":78,
     "name":"Brewmaster",
     "primary_attribute":"str",
@@ -615,7 +615,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Brewmaster.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Brewmaster"
   },
-  {
+  "77":{
     "id":79,
     "name":"Shadow Demon",
     "primary_attribute":"int",
@@ -623,7 +623,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Shadow Demon.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Shadow Demon"
   },
-  {
+  "78":{
     "id":80,
     "name":"Lone Druid",
     "primary_attribute":"agi",
@@ -631,7 +631,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Lone Druid.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Lone Druid"
   },
-  {
+  "79":{
     "id":81,
     "name":"Chaos Knight",
     "primary_attribute":"str",
@@ -639,7 +639,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Chaos Knight.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Chaos Knight"
   },
-  {
+  "80":{
     "id":82,
     "name":"Meepo",
     "primary_attribute":"agi",
@@ -647,7 +647,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Meepo.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Meepo"
   },
-  {
+  "81":{
     "id":83,
     "name":"Treant Protector",
     "primary_attribute":"str",
@@ -655,7 +655,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Treant Protector.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Treant Protector"
   },
-  {
+  "82":{
     "id":84,
     "name":"Ogre Magi",
     "primary_attribute":"int",
@@ -663,7 +663,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Ogre Magi.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Ogre Magi"
   },
-  {
+  "83":{
     "id":85,
     "name":"Undying",
     "primary_attribute":"str",
@@ -671,7 +671,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Undying.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Undying"
   },
-  {
+  "84":{
     "id":86,
     "name":"Rubick",
     "primary_attribute":"int",
@@ -679,7 +679,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Rubick.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Rubick"
   },
-  {
+  "85":{
     "id":87,
     "name":"Disruptor",
     "primary_attribute":"int",
@@ -687,7 +687,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Disruptor.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Disruptor"
   },
-  {
+  "86":{
     "id":88,
     "name":"Nyx Assassin",
     "primary_attribute":"agi",
@@ -695,7 +695,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Nyx Assassin.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Nyx Assassin"
   },
-  {
+  "87":{
     "id":89,
     "name":"Naga Siren",
     "primary_attribute":"agi",
@@ -703,7 +703,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Naga Siren.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Naga Siren"
   },
-  {
+  "88":{
     "id":90,
     "name":"Keeper of the Light",
     "primary_attribute":"int",
@@ -711,7 +711,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Keeper of the Light.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Keeper of the Light"
   },
-  {
+  "89":{
     "id":91,
     "name":"Io",
     "primary_attribute":"str",
@@ -719,7 +719,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Io.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Io"
   },
-  {
+  "90":{
     "id":92,
     "name":"Visage",
     "primary_attribute":"int",
@@ -727,7 +727,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Visage.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Visage"
   },
-  {
+  "91":{
     "id":93,
     "name":"Slark",
     "primary_attribute":"agi",
@@ -735,7 +735,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Slark.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Slark"
   },
-  {
+  "92":{
     "id":94,
     "name":"Medusa",
     "primary_attribute":"agi",
@@ -743,7 +743,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Medusa.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Medusa"
   },
-  {
+  "93":{
     "id":95,
     "name":"Troll Warlord",
     "primary_attribute":"agi",
@@ -751,7 +751,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Troll Warlord.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Troll Warlord"
   },
-  {
+  "94":{
     "id":96,
     "name":"Centaur Warrunner",
     "primary_attribute":"str",
@@ -759,7 +759,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Centaur Warrunner.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Centaur Warrunner"
   },
-  {
+  "95":{
     "id":97,
     "name":"Magnus",
     "primary_attribute":"str",
@@ -767,7 +767,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Magnus.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Magnus"
   },
-  {
+  "96":{
     "id":98,
     "name":"Timbersaw",
     "primary_attribute":"str",
@@ -775,7 +775,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Timbersaw.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Timbersaw"
   },
-  {
+  "97":{
     "id":99,
     "name":"Bristleback",
     "primary_attribute":"str",
@@ -783,7 +783,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Bristleback.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Bristleback"
   },
-  {
+  "98":{
     "id":100,
     "name":"Tusk",
     "primary_attribute":"str",
@@ -791,7 +791,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Tusk.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Tusk"
   },
-  {
+  "99":{
     "id":101,
     "name":"Skywrath Mage",
     "primary_attribute":"int",
@@ -799,7 +799,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Skywrath Mage.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Skywrath Mage"
   },
-  {
+  "100":{
     "id":102,
     "name":"Abaddon",
     "primary_attribute":"str",
@@ -807,7 +807,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Abaddon.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Abaddon"
   },
-  {
+  "101":{
     "id":103,
     "name":"Elder Titan",
     "primary_attribute":"str",
@@ -815,7 +815,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Elder Titan.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Elder Titan"
   },
-  {
+  "102":{
     "id":104,
     "name":"Legion Commander",
     "primary_attribute":"str",
@@ -823,7 +823,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Legion Commander.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Legion Commander"
   },
-  {
+  "103":{
     "id":105,
     "name":"Techies",
     "primary_attribute":"int",
@@ -831,7 +831,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Techies.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Techies"
   },
-  {
+  "104":{
     "id":106,
     "name":"Ember Spirit",
     "primary_attribute":"agi",
@@ -839,7 +839,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Ember Spirit.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Ember Spirit"
   },
-  {
+  "105":{
     "id":107,
     "name":"Earth Spirit",
     "primary_attribute":"str",
@@ -847,7 +847,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Earth Spirit.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Earth Spirit"
   },
-  {
+  "106":{
     "id":108,
     "name":"Underlord",
     "primary_attribute":"str",
@@ -855,7 +855,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Underlord.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Underlord"
   },
-  {
+  "107":{
     "id":109,
     "name":"Terrorblade",
     "primary_attribute":"agi",
@@ -863,7 +863,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Terrorblade.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Terrorblade"
   },
-  {
+  "108":{
     "id":110,
     "name":"Phoenix",
     "primary_attribute":"str",
@@ -871,7 +871,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Phoenix.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Phoenix"
   },
-  {
+  "109":{
     "id":111,
     "name":"Oracle",
     "primary_attribute":"int",
@@ -879,7 +879,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Oracle.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Oracle"
   },
-  {
+  "110":{
     "id":112,
     "name":"Winter Wyvern",
     "primary_attribute":"int",
@@ -887,7 +887,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Winter Wyvern.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Winter Wyvern"
   },
-  {
+  "111":{
     "id":113,
     "name":"Arc Warden",
     "primary_attribute":"agi",
@@ -895,7 +895,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Arc Warden.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Arc Warden"
   },
-  {
+  "112":{
     "id":114,
     "name":"Monkey King",
     "primary_attribute":"agi",
@@ -903,7 +903,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Monkey King.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Monkey King"
   },
-  {
+  "113":{
     "id":119,
     "name":"Dark Willow",
     "primary_attribute":"int",
@@ -911,7 +911,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Dark Willow.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Dark Willow"
   },
-  {
+  "114":{
     "id":120,
     "name":"Pangolier",
     "primary_attribute":"agi",
@@ -919,7 +919,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Pangolier.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Pangolier"
   },
-  {
+  "115":{
     "id":121,
     "name":"Grimstroke",
     "primary_attribute":"int",
@@ -927,7 +927,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Grimstroke.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Grimstroke"
   },
-  {
+  "116":{
     "id":123,
     "name":"Hoodwink",
     "primary_attribute":"agi",
@@ -935,7 +935,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Hoodwink.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Hoodwink"
   },
-  {
+  "117":{
     "id":126,
     "name":"Void Spirit",
     "primary_attribute":"int",
@@ -943,7 +943,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Void Spirit.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Void Spirit"
   },
-  {
+  "118":{
     "id":128,
     "name":"Snapfire",
     "primary_attribute":"str",
@@ -951,7 +951,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Snapfire.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Snapfire"
   },
-  {
+  "119":{
     "id":129,
     "name":"Mars",
     "primary_attribute":"str",
@@ -959,7 +959,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Mars.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Mars"
   },
-  {
+  "120":{
     "id":135,
     "name":"Dawnbreaker",
     "primary_attribute":"str",
@@ -967,7 +967,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Dawnbreaker.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Dawnbreaker"
   },
-  {
+  "121":{
     "id":136,
     "name":"Marci",
     "primary_attribute":"str",
@@ -975,7 +975,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Marci.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Marci"
   },
-  {
+  "122":{
     "id":137,
     "name":"Primal Beast",
     "primary_attribute":"str",
@@ -983,7 +983,7 @@
     "img":"..\\\\static\\\\HeroImages\\\\Primal Beast.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Primal Beast"
   },
-  {
+  "123":{
     "id":138,
     "name":"Muerta",
     "primary_attribute":"int",
@@ -991,4 +991,4 @@
     "img":"..\\\\static\\\\HeroImages\\\\Muerta.png",
     "link":"https:\/\/dota2.fandom.com\/wiki\/Muerta"
   }
-]
+}

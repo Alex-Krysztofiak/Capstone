@@ -8,6 +8,10 @@ class MyProfileDisplay extends React.Component {
             heroes: [],
             heroesIndex: 0,
             profile: [],
+            peerIndex: 0,
+            peers: [],
+            mostplayedIndex: 0,
+            mostplayed: [],
         }
     }
 
@@ -15,16 +19,21 @@ class MyProfileDisplay extends React.Component {
 
 
     componentDidMount() {
-        fetch('static\\JSON\\heroList.json')
+        fetch('..\\static\\JSON\\heroList.json')
             .then(response => response.json())
             .then(data2 => this.setState({ heroes: data2, isLoading: false }));
-        fetch('static\\JSON\\matches_recent.json')
+        fetch('..\\static\\JSON\\matches_recent.json')
             .then(response => response.json())
             .then(data => this.setState({ matches: data, isLoading: false }));
-        fetch('static\\JSON\\PlayerProfile.json')
+        fetch('..\\static\\JSON\\PlayerProfile.json')
             .then(response => response.json())
             .then(data => this.setState({ profile: data, isLoading: false }));
-
+        fetch('..\\static\\JSON\\peer_info.json')
+            .then(response => response.json())
+            .then(data => this.setState({ peers: data, isLoading: false }));
+        fetch('..\\static\\JSON\\mostplayed_info.json')
+            .then(response => response.json())
+            .then(data => this.setState({ mostplayed: data, isLoading: false }));
     }
 
     render() {
@@ -34,51 +43,25 @@ class MyProfileDisplay extends React.Component {
             return (
                 
                 <>
-                    <div key="profile" className="playerProfile">
-                        {
-                            this.state.profile.map(profile => {
-                                return (
-                                    <>
-                                        <div key={"key_" + profile.id} className="playerProfileInfo">
+                    <div className="PlayerContainer"> 
+                        
+                        {this.state.profile.map(profile => {
+                            return (
+                                <>
+                                    
+                                        <div key={"key_" + profile.id} className="playerProfileImg">
                                             <img key={"imgkey_" + profile.id} src={profile.avatar}></img>
                                         </div>
-                                        <div key={"key_" + profile.id} className="playerProfileInfo">
-                                            <h1>{profile.name}</h1>
-                                            <h3>{profile.id}</h3>
+                                        <div key={"key_" + profile.id} className="playerProfileName">
+                                            <p><b>{profile.name}</b></p>
                                         </div>
-                                        <div key={"key_" + profile.id} className="playerProfileInfo">
-                                            <h2>Wins: {profile.wins}</h2>
-                                            <h2>Losses: {profile.losses}</h2>
-                                            <h2>Winrate: {profile.wr}</h2>
+                                        <div key={"key_" + profile.id} className="playerProfileWR">
+                                            <p><i>W: </i> {profile.wins} <i>L: </i>  {profile.losses}</p>
+                                            <p><i>WINRATE: </i> {profile.wr}</p>
+                                            <p><i>MMR: </i> {profile.rank_estimate}</p>
                                         </div>
-                                        <div key={"key_" + profile.id} className="playerProfileInfo">
-                                            {(() => {
-                                                switch (profile.rank_name) {
-                                                    case 1:
-                                                        return "Herald: ";
-                                                    case 2:
-                                                        return "Guardian: ";
-                                                    case 3:
-                                                        return "Crusader: ";
-                                                    case 4:
-                                                        return "Archon: ";
-                                                    case 5:
-                                                        return "Legend: ";
-                                                    case 6:
-                                                        return "Ancient: ";
-                                                    case 7:
-                                                        return "Divine: ";
-                                                    case 8:
-                                                        return "Immortal: ";
-                                                    default:
-                                                        return "unranked";
-                                                }
-                                            })()}
-                                            {profile.rank_number}
-                                            {/* prifile.img */}
-                                            <h2>MMR: {profile.rank_estimate}</h2>
-                                        </div>
-                                        <div key={"key_" + profile.id} className="playerProfileInfo">
+                                      
+                                        <div key={"key_" + profile.id} className="playerProfileRank">
                                             {(() => {
                                                 switch (profile.rank_name) {
                                                     case 1:
@@ -101,87 +84,199 @@ class MyProfileDisplay extends React.Component {
                                                         return <img src="https://cdn.shopify.com/s/files/1/2312/2697/products/cali_3.png?v=1576660156"></img>
                                                 }
                                             })()}
-                                            </div>
+                                            <p>{(() => {
+                                                switch (profile.rank_name) {
+                                                    case 1:
+                                                        return "Herald: ";
+                                                    case 2:
+                                                        return "Guardian: ";
+                                                    case 3:
+                                                        return "Crusader: ";
+                                                    case 4:
+                                                        return "Archon: ";
+                                                    case 5:
+                                                        return "Legend: ";
+                                                    case 6:
+                                                        return "Ancient: ";
+                                                    case 7:
+                                                        return "Divine: ";
+                                                    case 8:
+                                                        return "Immortal: ";
+                                                    default:
+                                                        return "Unranked";
+                                                }
+                                            })()}
 
+                                                {profile.rank_number}</p>
+                                        </div>
+                                    
 
-                                    </>
-                                )//match return of the if inside map 
-                            })}
+                                </>
+                            )
+                        })}
                     </div>
-                    <div key={"Match"} className="gameInfoBoxKey">
-                        <div key={"key_1"} className="matchInfoKey">
-                        </div>
-                        <div key={"key_11"} className="matchInfoKey">
-                            {"Hero"}
-                        </div>
-                        <div key={"key_2"} className="matchInfoKey">
-                            {"Match id"}<br></br>
-                            {"Match Duration"}
-                        </div>
-                        <div key={"key_4"} className="matchInfoKey">
-                            {"Kills"}
-                        </div>
-                        <div key={"key_5"} className="matchInfoKey">
-                            {"Deaths"}
-                        </div>
-                        <div key={"key_6"} className="matchInfoKey">
-                            {"Assists"}
-                        </div>
-                        <div key={"key_7"} className="matchInfoKey">
-                            {"Team"} <br></br>
-                            {"Result"}
-                        </div>
-                        <div key={"key_8"} className="matchInfoKey">
-                            {"Party Size"}
-                        </div>
-                    </div>
+                    
+                    <div className="RecentMatches"> 
+                        <table className="MatchesTable">
+                            <caption>Recent Matches</caption>
+                                    <thead>
+                                        <tr>
+                                        <th>Hero</th>
+                                        <th>{/* Blank */}</th>
+                                        <th>Duration</th>
+                                        <th>K / D / A</th>
+                                        {/* <th>D</th>
+                                        <th>A</th> */}
+                                        <th>Result</th>
+                                        <th>Party Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                     {
                         this.state.matches.map(match => {
                             return (
                                 <>
-                                    <div key={match.match_id} className="gameInfoBox">
+                                <tr key={match.match_id} className="gameInfoBox">
+                                    <td key={"key_" + match.match_id + match.hero_name} className="matchInfo">
+                                          
                                         {this.state.heroes.map(hero => {
                                             if (match.hero_name == hero.name) {
                                                 return (
                                                     <>
-                                                        <img key={"key_" + hero.id} className="matchInfoImg" src={hero.img}></img>
+                                                        <img key={"key_" + hero.id} src={hero.img}></img>
                                                     </>
                                                 )
                                             }
                                         })}
-                                        <div key={"key_" + match.match_id + match.hero_name} className="matchInfo">
+                                          
+                                        </td>
+                                        <td key={"key_" + match.match_id + match.hero_name} className="matchInfo">
                                             {match.hero_name}
-                                        </div>
-                                        <div key={"key_" + match.match_id + match.duration} className="matchInfo">
-                                        {/* <form method="POST">   
-                                            <button id="matchid-btn" type="submit" class="btn-playerid">
-                                                {match.match_id}
-                                            </button>
-                                        </form> */}
-                                            {match.match_id} <br></br>
+                                        </td>
+                                        <td key={"key_" + match.match_id + match.duration} className="matchInfo">
                                             {match.duration}
-
-                                        </div>
-                                        <div key={"key_" + match.match_id + match.kills} className="matchInfo">
-                                            {match.kills}
-                                        </div>
-                                        <div key={"key_" + match.match_id + match.deaths} className="matchInfo">
+                                        </td>
+                                        <td key={"key_" + match.match_id + match.kills} className="matchInfo">
+                                            {match.kills}{" / "}{match.deaths}{" / "}{match.assists}
+                                        </td>
+                                        {/* <td key={"key_" + match.match_id + match.deaths} className="matchInfo">
                                             {match.deaths}
-                                        </div>
-                                        <div key={"key_" + match.match_id+ match.assists} className="matchInfo">
+                                        </td>
+                                        <td key={"key_" + match.match_id+ match.assists} className="matchInfo">
                                             {match.assists}
-                                        </div>
-                                        <div key={"key_" + match.match_id} className="matchInfo">
+                                        </td> */}
+                                        <td key={"key_" + match.match_id} className="matchInfo">
                                             {match.team} <br></br>
                                             {match.result}
-                                        </div>
-                                        <div key={"key_" + match.match_id + match.party_size} className="matchInfo">
+                                        </td>
+                                        <td key={"key_" + match.match_id + match.party_size} className="matchInfo">
                                             {match.party_size}
-                                        </div>
-                                    </div>
+                                        </td>
+                                    </tr>
                                 </>
                             )//match return of the if inside map 
                         })}
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div className="Sidebar1"> 
+                        <table className="PeerTable">
+                        <caption>Peers</caption>
+
+                                <thead>
+                                    <tr>
+                                    <th>Player</th>
+                                    <th></th>
+                                    <th>Matches</th>
+                                    <th>Wr %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                        {
+                        this.state.peers.map(peer => {
+                            return (
+                                <>   
+                                    
+                        
+                                    <tr key={peer.account_id} className="peerInfoBox" id={peer.account_id} >
+                                    
+                                        <td key={"key_" + peer.account_id} className="peerInfo">
+                                            <img key={"imgkey_" + peer.avatarfull} src={peer.avatarfull}></img>                                
+                                        </td>   
+                                        <td key={"key_" + peer.account_id} id={peer.account_id} className="peerInfo">
+                                            <a href={"/player_" + peer.account_id} >{peer.personaname}</a>
+                                        </td>                               
+                                        <td key={"key_" + peer.account_id} className="peerInfo">
+                                            {peer.with_games}
+                                        </td>
+                                        <td key={"key_" + peer.account_id} className="peerInfo">
+                                            {peer.with_wr}
+                                        </td>
+                                       
+                                    </tr>
+
+                                    
+                                    
+                                </>
+                            )//match return of the if inside map 
+                        })}
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div className="Sidebar2"> 
+                        <table className="MPTable">
+                            <caption>Matches Played</caption>
+                                    <thead>
+                                        <tr>
+                                        <th>HERO</th>
+                                        <th></th>
+                                        <th>MATCHES</th>
+                                        <th>Wr %</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                        {
+                        this.state.mostplayed.map(mp => {
+                            return (
+                                <>
+                                    
+                                    
+                                    
+                                    <tr key={mp.hero_id} className="mpInfoBox" id={mp.hero_id}>
+
+                                        <td key={"key_" + mp.hero_id} className="mpInfo">
+                                            {this.state.heroes.map(hero => {
+                                                if (mp.hero_name == hero.name) {
+                                                    return (
+                                                        <>
+                                                            <img key={"key_" + hero.id} src={hero.img}></img>
+                                                            
+                                                        </>
+                                                    )
+                                                }
+                                            })}
+                                        </td>
+                                        <td key={"key_" + mp.games} className="mpInfo">
+                                            {mp.hero_name}
+                                        </td>
+                                        <td key={"key_" + mp.games} className="mpInfo">
+                                            {mp.games}
+                                        </td>
+                                        <td key={"key_" + mp.wr} className="mpInfo">
+                                            {mp.wr}
+                                        </td>
+                                       
+                                    </tr>
+                                    
+                                    
+                                </>
+                            )//match return of the if inside map 
+                        })}
+                        </tbody>
+                        </table>
+                    </div>
 
                 </>
 
@@ -189,8 +284,10 @@ class MyProfileDisplay extends React.Component {
 
         } //match else of isLoading
     }
-
-
+    
 }
+
+
+
 ReactDOM.render(<MyProfileDisplay />, document.querySelector('#divRecentMatchDisplay'))
 
