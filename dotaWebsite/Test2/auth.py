@@ -8,6 +8,10 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
+    # This will redirect a user to their profile if they are already logged in on the home page
+    if current_user.is_authenticated:
+        return redirect(url_for('views.player', number = current_user.sid))
+        
     if request.method == 'POST':
         email = request.form.get('email')
         password = request.form.get('password')
@@ -17,7 +21,7 @@ def login():
             if check_password_hash(user.password, password):
                 #flash('Logged in successfully!', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.player'))
+                return redirect(url_for('views.player', number = user.sid))
             else:
                 flash('Incorrect password', category='error')
         else:
@@ -46,12 +50,11 @@ def sign_up():
         elif len(password1) < 7:
             flash('Passwords have to be atleast 7 characters', category='error', email=email, firstname=firstname, sid=sid)
         else:
-            #new_user = User(email=email, firstname=firstname, password=generate_password_hash(password1, method='sha256'))
-            new_user = User(email=email, firstname=firstname, password=password1, sid=sid)
+            new_user = User(email=email, firstname=firstname, password=generate_password_hash(password1, method='sha256'), sid=sid)
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
-            return redirect(url_for('views.player'))
+            return redirect(url_for('views.player', number = new_user.sid))
             
 
     return render_template("sign_up.html", user=current_user)
