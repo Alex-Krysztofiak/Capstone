@@ -29,33 +29,33 @@ print("")
  """
 
 # Test 2 (create the hero list json)
-# url4 = f'https://api.opendota.com/api/heroes'
-# r4 = requests.get(url4)
-# data4 = json.loads(r4.text)
+url4 = f'https://api.opendota.com/api/heroes'
+r4 = requests.get(url4)
+data4 = json.loads(r4.text)
 
-# hero_list = []
-# for hero in data4:
-#     id = hero['id']
-#     localized_name = hero['localized_name']
-#     primary_attr = hero['primary_attr']
-#     attack_type =  hero['attack_type']
-#     img = "static\\\\HeroImages\\\\" + hero['localized_name'] +  ".png"
-#     link = "https://dota2.fandom.com/wiki/" + hero['localized_name']
+hero_list = []
+for hero in data4:
+    id = hero['id']
+    localized_name = hero['localized_name']
+    primary_attr = hero['primary_attr']
+    attack_type =  hero['attack_type']
+    img = "..\\\\static\\\\HeroImages\\\\" + hero['localized_name'] +  ".png"
+    link = "https://dota2.fandom.com/wiki/" + hero['localized_name']
        
-#     hero_info = {
-#         'id': id,
-#         'name': localized_name,
-#         'primary_attribute': primary_attr,
-#         'attack_type': attack_type,
-#         'img': img,
-#         'link': link,
+    hero_info = {
+        'id': id,
+        'name': localized_name,
+        'primary_attribute': primary_attr,
+        'attack_type': attack_type,
+        'img': img,
+        'link': link,
             
-#     }
-#     hero_list.append(hero_info)
+    }
+    hero_list.append(hero_info)
 
-# dotadf = pd.DataFrame(hero_list) 
-# print(dotadf)
-# dotadf.to_json('Test2\static\JSON\heroList.json', orient='records', indent=2 )
+dotadf = pd.DataFrame(hero_list) 
+print(dotadf)
+dotadf.to_json('Test2\static\JSON\heroList.json', orient='records', indent=2 )
 
 
 
