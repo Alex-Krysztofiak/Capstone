@@ -95,7 +95,7 @@ h1{
     font-family: 'Arvo', serif;
     /* color: #1a1a1a;
     background-color: #C32534; */
-    color: #C32534;
+    color: #7d77ff;
     /* border: 5px solid #C32534; */
     border-radius: 15px; 
     font-weight: 500;
@@ -105,7 +105,7 @@ h1{
 h2 {
     font-size: 4vw;
     font-weight: 400;
-    color: #79A7D9;
+    color: #BF7229;
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     
@@ -119,8 +119,12 @@ h2 {
     z-index: 3;
     margin: auto;
     font-family: 'Arvo', serif;
-    
+    transition: .4s;
 }
+.button-menu a:hover {
+    color: #f1f1f1;
+}
+
 .button{
    width: 18vw;
    height: 12vh;
@@ -128,36 +132,13 @@ h2 {
    margin: 10px 10px;
    border-radius: 15px;
    font-weight: bold; 
-   border: 3px solid #C32534;
-   background: #C32534;
+   background-color: #7d77ff;
    color: #ffffff;
-   font-size: 25px;
    font-weight: bolder;
    cursor: pointer;
    position: relative;
    overflow: hidden;
    text-decoration: none;
    z-index: 2;
-   transition: .4s;
+   
 }
-.button:hover {
-    color: #79A7D9;
-}
-/* .button span{
-    background: linear-gradient(.25turn, #40d9aa, #35a7e3, #7d77ff);
-    height: 100%;
-    width: 0%;
-    border-radius: 0px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -2;
-    transition: .4s;
-    text-decoration: none;
-}
-.button:hover span{
-    width: 110%;
-    height: 130%;
-    transform: translateX(100px);
-    transform: translateY(5px);
-} */

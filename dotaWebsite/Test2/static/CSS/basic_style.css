@@ -5,32 +5,37 @@
     font-family: sans-serif;
     text-decoration: none;
     list-style: none;
+    /* font-family: 'Arvo', serif;*/
+    font-family: 'Montserrat', sans-serif; 
+    
 }
+
 
 /* Add a font */
 .banner {  
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#1a1a1a, #7d77ff);
+    background: linear-gradient(#1a1a1a, #595779);
     box-sizing: border-box;
     overflow: hidden;  
     background-position: center;
     background-size: cover; 
     
+    
 }
 .menu {
     /* background: #1a1a1a; */
-    padding-bottom: 40px;
+    padding-bottom: 4vh;
+    min-height: 50px;
 
 }
 .menu ul{
-    padding: 20px;
-    padding-top: 40px;
+    padding: 3vh 2vw;
 }
 .menu li{
     display: inline;
     float: left;
-    margin: 0px 30px;
+    margin: 0 1vw;
     
 }
 .menu li#searchbar{
@@ -39,52 +44,50 @@
 .menu a{
     position: relative;
     display: inline-flex;
-    font-size: 20px;
+    font-size: 3vh;
     color: #ffffff;
-    padding: 2px;
+    padding: .2vh;
 }
-.menu a::after {
+.menu a::after, .btn-playerid::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -.3vh;
     left: 0;
     width: 0;
-    height: 4px;
+    height: .2vh;
     display: inline-flex;
     background: #7d77ff;
     transition: .3s;
 }
 
-.menu a:hover:after{
+.menu a:hover:after, .btn-playerid:hover:after{
     width: 100%;
 }
 
 .btn-playerid {
     position: relative;
     display: inline-flex;
-    font-size: 20px;
+    font-size: 3vh;
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #1a1a1a;
+    border: .2vh solid #1a1a1a00;
     border-radius: 5px;
-    padding: 2px;
+    margin: .1vh;
     transition: .3s;
- }
-
- .btn-playerid:hover {
-    cursor: pointer;
-    border: 2px solid #7d77ff;
  }
  .form {
     position: relative;
     display: inline-flex;
-    font-size: 18px;
+    font-size: 3vh;
     color: #ffffff;
     background-color: #464646;
-    border: 2px solid #7d77ff;
-    border-radius: 5px;
-    padding: 2px;
+    border: .2vh solid #7d77ff;
+    border-radius: 8px;
+    padding: .2vw;
  }
+ input#playerid.form {
+    height: 3.5vh;
+}
 .alert-danger {
     width: 100%;
     height: 35px;
@@ -94,3 +97,4 @@
     background-color: red;
     color: #ffffff;
  }
+ 
