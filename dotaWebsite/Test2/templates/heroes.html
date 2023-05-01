@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block stylesheet %} 
-<link rel="stylesheet" href="{{ url_for('static', filename='CSS/heropage_style.css') }}"> 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/heropage_style2.css') }}"> 
 {% endblock %}
 
 
@@ -11,16 +11,7 @@ Heroes
 
 {% block staticContent %} 
 <div>
-    <ul> 
-        <li>
-            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_strength.png"></a> <!-- make radiobutton -->
-        </li>
-        <li>
-            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_agility.png"></a>
-        </li>
-        <li>
-            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_intelligence.png"></a> 
-        </li>  
+    <ul>   
         <li id="searchbar">
             <div class="form-group">
                 <label for="playerid"></label>
@@ -43,5 +34,8 @@ Heroes
 {% endblock %}
 
 {% block javascript %} 
-<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}"></script>
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}">
+ 
+ 
+</script>
 {% endblock %}
