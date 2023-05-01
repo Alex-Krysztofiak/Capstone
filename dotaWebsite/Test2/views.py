@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import  login_required, current_user
 from .models import Note, User
 from .player_loader import Player
+from .match_loader import Match
 #from .auth import auth
 from pprint import pprint
 
@@ -44,17 +45,16 @@ def player(number):
     
     return render_template("playerprofile.html", user=current_user)
 
-@views.route('/match', methods=['GET', 'POST'])
+@views.route('/match_<number>', methods=['GET', 'POST'])
 @login_required
-def match():
+def match(number):
+    num = Match(number)
+    num.display_match()
     # This will redirect on searchbar
     if request.form.get("playerid"):
         player_id = request.form.get("playerid")
         return redirect(url_for('views.player', number = player_id))
-    # if request.method == 'POST':
-    #     match_id = request.form.get("matchid-btn")
-    #     print(match_id)
-    #     # return redirect(url_for("match.user", user=current_user))
+    
     return render_template("match.html", user=current_user)
   
 

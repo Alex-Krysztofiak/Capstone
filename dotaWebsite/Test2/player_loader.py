@@ -7,7 +7,7 @@ import pandas as pd
 import math
 import os
 from flask import request
-
+from datetime import datetime
 
 # --- Steam ID's for testing purposes ---
 # 883661889
@@ -15,7 +15,7 @@ from flask import request
 # 163881259
 # 97203194
 
-LIMIT = 10
+LIMIT = 9
 
 class Player:
     hero_info_data = open('Test2\static\JSON\heroInfo.json')
@@ -30,7 +30,6 @@ class Player:
     heroes_endpoint = f'/heroes'
 
     def __init__(self, steam_id):
-        # self.steam_id = request.form.get("playerid")
         self.steam_id = steam_id
 
     def main_request(self):
@@ -67,11 +66,25 @@ class Player:
                 result = 'Won Match'
             else:
                 result = 'Lost Match'
+            
+            if result == 'Won Match':
+                resultId = 'WonMatch'
+            elif result == 'Lost Match':
+                resultId = 'LostMatch'
+            else:
+                resultId = 'Unknown'
 
             for x in self.json_hero_info_data:
                 if game['hero_id'] == self.json_hero_info_data[x]['id']:
                     hero_name = self.json_hero_info_data[x]['name']
+        
+            start_time = game['start_time']
             
+            if game['lobby_type'] == 7:
+                lobby_type = "Ranked"
+            else:
+                lobby_type = "Unranked"
+
             match_info = {
                 'match_id': match_id,
                 'duration': time.strftime("%H:%M:%S", time.gmtime(duration)), #converts the time from seconds to minutes (and seconds) in standard format
@@ -79,9 +92,13 @@ class Player:
                 'kills': kills,
                 'deaths': deaths,
                 'assists': assists,
-                'party_size': party_size,  
+                'party_size': party_size, 
+                'lobby_type': lobby_type,
+                'start_time': datetime.fromtimestamp(start_time).strftime("%B %d, %Y"),
                 'team': team,   
-                'result': result
+                'result': result,
+                'resultId': resultId,
+
             }
             game_list.append(match_info)
 
@@ -97,6 +114,7 @@ class Player:
         winrate = float(data_user2['win'] / float(data_user2['win'] + data_user2['lose']))
         winrate = winrate * 100
         finalWinrate = str(round(winrate, 2)) + "%"
+        
         if data_user['rank_tier']:
             rankName = math.trunc(int(data_user['rank_tier'])/10)
             rankNumber = int(data_user['rank_tier'])%10
@@ -105,7 +123,6 @@ class Player:
             rankNumber = ""
        
         
-
         profile_list = []
         player_info = {
             'name': data_user['profile']['personaname'],
@@ -113,10 +130,12 @@ class Player:
             'avatar': data_user['profile']['avatarfull'],
             'rank_name': rankName,
             'rank_number': rankNumber,
+            'rank_tier': data_user['rank_tier'],
             'rank_estimate': data_user['mmr_estimate']['estimate'],
             'wins': data_user2['win'],   
             'losses': data_user2['lose'], 
             'wr': finalWinrate,
+            
         }
         profile_list.append(player_info)
 
@@ -134,6 +153,7 @@ class Player:
             account_id = peer['account_id']
             with_win = peer['with_win']
             with_games = peer['with_games']
+            last_played = peer['last_played']
             if with_games > 0:
                 wr = with_win/with_games * 100
                 with_wr = str(round(wr, 2)) + "%"
@@ -147,6 +167,8 @@ class Player:
                 'with_win': with_win,
                 'with_games': with_games ,
                 'with_wr': with_wr,
+                'last_played': datetime.fromtimestamp(last_played).strftime("%B %d, %Y"),
+                # 'last_played': last_played,
             }
             if len(peer_list) < LIMIT:
                 peer_list.append(peer_info)
@@ -163,7 +185,7 @@ class Player:
             hero_id = game['hero_id']
             games = game['games']
             win = game['win']
-            
+            last_played = game['last_played']
 
             if games > 0:
                 wrt = win/games * 100
@@ -182,7 +204,8 @@ class Player:
                 'hero_name': hero_name,
                 'games': games,
                 'win': win,
-                'wr': wr
+                'wr': wr,
+                'last_played': datetime.fromtimestamp(last_played).strftime("%B %d, %Y"),
             }
             if len(most_played_list) < LIMIT:
                 most_played_list.append(mp_info)
