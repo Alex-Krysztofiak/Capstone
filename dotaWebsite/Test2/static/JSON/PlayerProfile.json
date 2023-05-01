@@ -1,13 +1,14 @@
 [
   {
-    "name":"!DetectiveBongo",
-    "id":"76561198843927617",
-    "avatar":"https:\/\/avatars.akamai.steamstatic.com\/5a0f826f789a5e4703eeaf01da0d0be65756ea21_full.jpg",
-    "rank_name":5,
-    "rank_number":2,
-    "rank_estimate":3317,
-    "wins":1107,
-    "losses":924,
-    "wr":"54.51%"
+    "name":"bebe api",
+    "id":"76561198220834328",
+    "avatar":"https:\/\/avatars.akamai.steamstatic.com\/affb10a4d154509456815c2b60d66bc640bbf16e_full.jpg",
+    "rank_name":0,
+    "rank_number":"",
+    "rank_tier":null,
+    "rank_estimate":1384,
+    "wins":289,
+    "losses":355,
+    "wr":"44.88%"
   }
 ]
