@@ -1,0 +1,77 @@
+.title{
+    margin: auto;
+    width: 100%;
+    margin: 30px;
+
+    text-align: center;
+    font-size: 2vw;
+    color: #f1f1f1;
+}
+
+.flexContainer{
+    margin: auto;
+    width: 100%;
+}
+.PlayerContainer{
+    margin: auto;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px
+}
+.flexChild{
+    margin: 10px;
+    padding: 0px;
+    width: 400px;
+    aspect-ratio: 16/9;
+    color: #f1f1f1;
+    position: relative;
+}
+
+.flexChildImg {
+    width: 100%;
+    box-shadow: 2px 1px 1px #111111;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    aspect-ratio: 16/9;    
+}
+.flexChild h1{
+    font-size: 3vw;
+    color: #f1f1f1;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0),40%, rgba(0,0,0,1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    transform: translate(-10%, 45%); 
+    transition: .3s ;
+    overflow: hidden; 
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+
+.flexChild:hover .flexChildImg{
+    width: 135%;
+    transform: translate(-10%, -10%); 
+    z-index: 2;
+
+}
+
+.flexChild:hover h1{
+    height: 50%;
+    width: 135%;
+    opacity: 1;
+    z-index: 2;
+}
