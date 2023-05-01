@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block stylesheet %} 
-<link rel="stylesheet" href="{{ url_for('static', filename='CSS/playerprofile_style.css') }}"> 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/blog_style.css') }}"> 
 {% endblock %}
 
 
@@ -10,25 +10,14 @@ Blog
 {% endblock %}
 
 {% block staticContent %} 
-<h1 style="color: white;">Game Patches</h1>
-<span>
-    <p style="color: white; font-size: large;">March 14th</p>
-    <iframe src="https://dota2.fandom.com/wiki/March_14,_2023_Patch" title="description" width="800px" height="300px"></iframe>
-    <p style="color: white; font-size: large;">March 13th</p>
-    <iframe src="https://dota2.fandom.com/wiki/March_13,_2023_Patch" title="description" width="800px" height="300px"></iframe>
-    <p style="color: white; font-size: large;">March 10th</p>
-    <iframe src="https://dota2.fandom.com/wiki/March_10,_2023_Patch" title="description" width="800px" height="300px"></iframe>
-    <p style="color: white; font-size: large;">March 1st</p>
-    <iframe src="https://dota2.fandom.com/wiki/March_01,_2023_Patch" title="description" width="800px" height="300px"></iframe>
-</span>
-
-
+<div class="title"><h1>Blog</h1></div>
 {% endblock %}
 
 {% block flexContent %} 
-   
+<div class="flexContainer" id="divBlogDisplay">
+</div> 
 {% endblock %}
 
 {% block javascript %} 
-<script type="text/babel" src="{{ url_for('static', filename='JS/JS_PlayerProfile2.js') }}"></script>
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_BlogPage.js') }}"></script>
 {% endblock %}
