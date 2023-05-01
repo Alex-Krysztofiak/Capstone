@@ -123,11 +123,11 @@ class MyProfileDisplay extends React.Component {
                                         <tr>
                                         <th>Hero</th>
                                         <th>{/* Blank */}</th>
-                                        <th>Duration</th>
+                                        <th>Result</th>
                                         <th>K / D / A</th>
                                         {/* <th>D</th>
                                         <th>A</th> */}
-                                        <th>Result</th>
+                                        <th>Duration</th>
                                         <th>Party Size</th>
                                         </tr>
                                     </thead>
@@ -151,26 +151,23 @@ class MyProfileDisplay extends React.Component {
                                           
                                         </td>
                                         <td key={"key_" + match.match_id + match.hero_name} className="matchInfo">
-                                            {match.hero_name}
+                                            {match.hero_name} <br></br>
+                                            <p>{match.start_time}</p>
                                         </td>
-                                        <td key={"key_" + match.match_id + match.duration} className="matchInfo">
-                                            {match.duration}
+                                        <td key={"key_" + match.match_id} className="matchInfo" id={match.resultId}>
+                                            <a href={"/match_" + match.match_id} >{match.result}</a>
+                                            <p>{match.lobby_type}</p>   
+
                                         </td>
                                         <td key={"key_" + match.match_id + match.kills} className="matchInfo">
                                             {match.kills}{" / "}{match.deaths}{" / "}{match.assists}
                                         </td>
-                                        {/* <td key={"key_" + match.match_id + match.deaths} className="matchInfo">
-                                            {match.deaths}
-                                        </td>
-                                        <td key={"key_" + match.match_id+ match.assists} className="matchInfo">
-                                            {match.assists}
-                                        </td> */}
-                                        <td key={"key_" + match.match_id} className="matchInfo">
-                                            {match.team} <br></br>
-                                            {match.result}
+                                        <td key={"key_" + match.match_id + match.duration} className="matchInfo">
+                                            {match.duration}<br></br>
+                                            <p>{match.team}</p>                                          
                                         </td>
                                         <td key={"key_" + match.match_id + match.party_size} className="matchInfo">
-                                            {match.party_size}
+                                            {"x" + match.party_size}
                                         </td>
                                     </tr>
                                 </>
@@ -206,6 +203,7 @@ class MyProfileDisplay extends React.Component {
                                         </td>   
                                         <td key={"key_" + peer.account_id} id={peer.account_id} className="peerInfo">
                                             <a href={"/player_" + peer.account_id} >{peer.personaname}</a>
+                                            <p>{peer.last_played}</p>   
                                         </td>                               
                                         <td key={"key_" + peer.account_id} className="peerInfo">
                                             {peer.with_games}
@@ -260,6 +258,7 @@ class MyProfileDisplay extends React.Component {
                                         </td>
                                         <td key={"key_" + mp.games} className="mpInfo">
                                             {mp.hero_name}
+                                            <p>{mp.last_played}</p>
                                         </td>
                                         <td key={"key_" + mp.games} className="mpInfo">
                                             {mp.games}
