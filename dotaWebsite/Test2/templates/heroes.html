@@ -10,21 +10,30 @@ Heroes
 {% endblock %}
 
 {% block staticContent %} 
-<div>
-    <ul>   
+<!-- <div>
+    <ul> 
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_strength.png"></a> 
+        </li>
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_agility.png"></a>
+        </li>
+        <li>
+            <a href="" title=""><img class="priAttrImg" src="static\\MiscImages\\hero_intelligence.png"></a> 
+        </li>  
         <li id="searchbar">
             <div class="form-group">
-                <label for="playerid"></label>
+                <label for="hero"></label>
                 <input 
                     type="text" 
                     class="form" 
-                    id="playerid" 
-                    name="playerid" 
+                    id="hero" 
+                    name="hero" 
                 />
             </div>
         </li>
     </ul>
-</div>
+</div> -->
 {% endblock %}
 
 {% block flexContent %} 
@@ -34,8 +43,5 @@ Heroes
 {% endblock %}
 
 {% block javascript %} 
-<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}">
- 
- 
-</script>
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_HeroPage.js') }}"></script>
 {% endblock %}
