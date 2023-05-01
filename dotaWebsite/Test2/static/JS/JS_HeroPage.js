@@ -107,19 +107,9 @@ class MySkillDisplay extends React.Component {
                               <>
 
                                  <div name={"name_" + i} key={"key_" + i} className="flexChild" id={skill_element.primary_attribute}>
-                                    <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                     <a href={skill_element.link} target="_blank"><img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img></a>
                                     <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo">
-                                       <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
-                                          {/* {(() => {
-                                                switch (skill_element.primary_attribute) {
-                                                   case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
-                                                   case "agi": return <img className="priAttrImg" src={"static\\MiscImages\\hero_agility.png"}></img>;
-                                                   case "int":  return <img className="priAttrImg" src={"static\\MiscImages\\hero_intelligence.png"}></img>;
-                                                   default:      return "#FFFFFF";
-                                                }
-                                                })()} */}
-
-                                       </div>
+                                       <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2"> </div>
 
                                        <h1>{skill_element.name}</h1>
 
@@ -144,22 +134,12 @@ class MySkillDisplay extends React.Component {
                               <>
 
                                  <div name={"name_" + i} key={"key_" + i} className="flexChild" id={skill_element.primary_attribute}>
-                                    <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                     <a href={skill_element.link} target="_blank"><img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img></a>
                                     <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo">
-                                       <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
-                                          {/* {(() => {
-                                                switch (skill_element.primary_attribute) {
-                                                   case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
-                                                   case "agi": return <img className="priAttrImg" src={"static\\MiscImages\\hero_agility.png"}></img>;
-                                                   case "int":  return <img className="priAttrImg" src={"static\\MiscImages\\hero_intelligence.png"}></img>;
-                                                   default:      return "#FFFFFF";
-                                                }
-                                                })()} */}
-
-                                       </div>
+                                       <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2"></div>
 
                                        <h1>{skill_element.name}</h1>
-                                       \
+                                       
 
 
                                     </div>
@@ -180,17 +160,10 @@ class MySkillDisplay extends React.Component {
                               <>
 
                                  <div name={"name_" + i} key={"key_" + i} className="flexChild" id={skill_element.primary_attribute}>
-                                    <img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img>
+                                     <a href={skill_element.link} target="_blank"><img name={"imgname_" + i} key={"imgkey_" + i} className="flexChildImg" src={skill_element.img}></img></a>
                                     <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo">
                                        <div name={"h1name_" + i} key={"h1key_" + i} className="flexChildInfo2">
-                                          {/* {(() => {
-                                                switch (skill_element.primary_attribute) {
-                                                   case "str":   return <img className="priAttrImg" src={"static\\MiscImages\\hero_strength.png"}></img>;
-                                                   case "agi": return <img className="priAttrImg" src={"static\\MiscImages\\hero_agility.png"}></img>;
-                                                   case "int":  return <img className="priAttrImg" src={"static\\MiscImages\\hero_intelligence.png"}></img>;
-                                                   default:      return "#FFFFFF";
-                                                }
-                                                })()} */}
+                                         
 
                                        </div>
 
