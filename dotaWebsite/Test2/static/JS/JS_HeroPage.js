@@ -50,7 +50,7 @@ class MySkillDisplay extends React.Component {
       } else {
          return (
             <>
-               <span >
+               <span className="staticPart">
                   <ul>
                      <li>
                         <label>
