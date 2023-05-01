@@ -4,6 +4,7 @@ import time
 from random import randint
 import pandas as pd
 import math
+from pprint import pprint
 
 # Test 1
 """ #Used to test how to display usernames without all the other data
@@ -29,33 +30,33 @@ print("")
  """
 
 # Test 2 (create the hero list json)
-url4 = f'https://api.opendota.com/api/heroes'
-r4 = requests.get(url4)
-data4 = json.loads(r4.text)
+# url4 = f'https://api.opendota.com/api/heroes'
+# r4 = requests.get(url4)
+# data4 = json.loads(r4.text)
 
-hero_list = []
-for hero in data4:
-    id = hero['id']
-    localized_name = hero['localized_name']
-    primary_attr = hero['primary_attr']
-    attack_type =  hero['attack_type']
-    img = "..\\\\static\\\\HeroImages\\\\" + hero['localized_name'] +  ".png"
-    link = "https://dota2.fandom.com/wiki/" + hero['localized_name']
+# hero_list = []
+# for hero in data4:
+#     id = hero['id']
+#     localized_name = hero['localized_name']
+#     primary_attr = hero['primary_attr']
+#     attack_type =  hero['attack_type']
+#     img = "..\\\\static\\\\HeroImages\\\\" + hero['localized_name'] +  ".png"
+#     link = "https://dota2.fandom.com/wiki/" + hero['localized_name']
        
-    hero_info = {
-        'id': id,
-        'name': localized_name,
-        'primary_attribute': primary_attr,
-        'attack_type': attack_type,
-        'img': img,
-        'link': link,
+#     hero_info = {
+#         'id': id,
+#         'name': localized_name,
+#         'primary_attribute': primary_attr,
+#         'attack_type': attack_type,
+#         'img': img,
+#         'link': link,
             
-    }
-    hero_list.append(hero_info)
+#     }
+#     hero_list.append(hero_info)
 
-dotadf = pd.DataFrame(hero_list) 
-print(dotadf)
-dotadf.to_json('Test2\static\JSON\heroList.json', orient='records', indent=2 )
+# dotadf = pd.DataFrame(hero_list) 
+# print(dotadf)
+# dotadf.to_json('Test2\static\JSON\heroList.json', orient='records', indent=2 )
 
 
 
@@ -174,3 +175,73 @@ print(data4['mmr_estimate']['estimate'])
 # dotadf = pd.DataFrame(playerprofile) 
 # #print(player_info)
 # dotadf.to_json('Test1\PlayerProfile.json', orient='records', indent=1)
+
+# item_info_data = open('Test2\static\JSON\item_ids.json')
+# json_item_info_data = json.load(item_info_data)
+# # print(json_item_info_data["1"])
+# # for i in json_item_info_data:
+# #     # for i in range(0,6):
+# #     print(i)
+# match_request = requests.get('https://api.opendota.com/api/matches/6959099887')
+# match_data = match_request.json()
+
+# player_list = []
+# for x in range(len(match_data['players'])):
+#     for player in match_data['players']:
+    
+#         match_id = match_data['players'][x]['match_id']
+#         player_slot = match_data['players'][x]['player_slot']
+        
+#         if 'personaname' in match_data['players'][x]:
+#             personaname = (match_data['players'][x]['personaname'])
+#         else:
+#             personaname = "anonymous"
+
+#         if match_data['players'][x]['account_id']:
+#             account_id = math.trunc(int(match_data['players'][x]['account_id']))
+#         else:
+#             account_id = "private"
+
+#         hero_id = match_data['players'][x]['hero_id']
+#         level = match_data['players'][x]['level']
+#         gpm = match_data['players'][x]['gold_per_min']
+        
+#         item_0 = match_data['players'][x]['item_0']
+        
+
+#         for i in json_item_info_data:
+#             if int(i) == match_data['players'][x]['item_0']:
+#                 item_0 = json_item_info_data[i]
+#             if int(i) == match_data['players'][x]['item_1']:
+#                 item_1 = json_item_info_data[i]
+#             if int(i) == match_data['players'][x]['item_2']:
+#                 item_2 = json_item_info_data[i]
+#             if int(i) == match_data['players'][x]['item_3']:
+#                 item_3 = json_item_info_data[i]
+#             if int(i) == match_data['players'][x]['item_4']:
+#                 item_4 = json_item_info_data[i]
+#             if int(i) == match_data['players'][x]['item_5']:
+#                 item_5 = json_item_info_data[i]
+    
+        
+#         player_info = {
+#             'id': match_id,
+#             'player_slot': player_slot,
+#             'personaname': personaname,
+#             'account_id': account_id,
+#             "hero_id": hero_id,
+#             "level": level,
+#             "item_0": item_0,
+#             "item_1": item_1,
+#             "item_2": item_2,
+#             "item_3": item_3,
+#             "item_4": item_4,
+#             "item_5": item_5,
+#             'gpm': gpm
+#         }
+#     player_list.append(player_info)
+# # print(player_list)
+# chatwheel_info_data = open('Test2\static\JSON\chat_wheel.json', encoding = 'utf-8')
+# # for x in range(len(chatwheel_info_data)):
+# json_chatwheel_info_data = json.load(chatwheel_info_data)
+# 
