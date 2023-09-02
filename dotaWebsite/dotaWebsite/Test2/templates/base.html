@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Player Info">
+        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/basic_style.css') }}">
+        
+        {% block stylesheet %} 
+        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/heropage_style.css') }}"> 
+        {% endblock %}
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>{% block title %} Base {% endblock %}</title>
+
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="menu">
+                <ul class="menu__list">
+                    {% if user.is_authenticated %}
+                    
+                    <li class="menu__item">
+                        <form method="POST" id="profile">
+                            <a  href="playerprofile" title="">Profile</a>
+                        </form>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a href="heroes" title="">Explore Heroes</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog" title="">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="logout" title="logout">Logout</a> 
+                    </li>  
+                    <li class="menu__item" id="searchbar">
+                        <form method="POST" id="search">
+                            <div class="form-group">
+                                <label for="playerid"></label>
+                                <input 
+                                    type="text" 
+                                    class="form" 
+                                    id="playerid" 
+                                    name="playerid" 
+                                    
+                                />
+                                <button id="playerid-btn" type="submit" class="btn-playerid" onClick="runPlayerId()">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </li>
+                   
+
+                    {% else %}
+                    <li class="menu__item">
+                        <a href="/" title="">Home Page</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="login" title="Login">Login</a>
+                    </li> 
+                    
+                    {% endif %}
+                </ul>
+            </div> 
+
+            {% with messages = get_flashed_messages(with_categories=true) %} {% if
+                messages %} {% for category, message in messages %} {% if category ==
+                'error' %}
+                <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                  {{ message }}
+                  
+                </div>
+                {% else %}
+                <div class="alert alert-success alter-dismissable fade show" role="alert">
+                  {{ message }}
+                  
+                </div>
+                {% endif %} {% endfor %} {% endif %} {% endwith %}
+            
+            <div class="staticPart">
+              {% block staticContent %} 
+              {% endblock %}
+            </div>
+            
+            <div class="dynamicPart">
+              {% block flexContent %} This will have Flex(React) Content {% endblock %}
+            </div> 
+
+        </div>
+    </body>
+
+    {% block javascript %}
+    <script type="text/babel" src=""></script>
+    {% endblock %}
+    <script type="text/javascript">
+       
+
+        const runPlayerId = () => {
+            const playerId = document.getElementById("playerid").value;
+            // window.alert("Player Id: " + playerId);
+            return playerId;
+        };
+    </script>
+</html>
+

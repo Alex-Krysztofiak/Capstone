@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/playerprofile_style.css') }}"> 
+{% endblock %}
+
+
+{% block title %} 
+Blog
+{% endblock %}
+
+{% block staticContent %} 
+<h1 style="color: white;">Game Patches</h1>
+<span>
+    <p style="color: white; font-size: large;">March 14th</p>
+    <iframe src="https://dota2.fandom.com/wiki/March_14,_2023_Patch" title="description" width="800px" height="300px"></iframe>
+    <p style="color: white; font-size: large;">March 13th</p>
+    <iframe src="https://dota2.fandom.com/wiki/March_13,_2023_Patch" title="description" width="800px" height="300px"></iframe>
+    <p style="color: white; font-size: large;">March 10th</p>
+    <iframe src="https://dota2.fandom.com/wiki/March_10,_2023_Patch" title="description" width="800px" height="300px"></iframe>
+    <p style="color: white; font-size: large;">March 1st</p>
+    <iframe src="https://dota2.fandom.com/wiki/March_01,_2023_Patch" title="description" width="800px" height="300px"></iframe>
+</span>
+
+
+{% endblock %}
+
+{% block flexContent %} 
+   
+{% endblock %}
+
+{% block javascript %} 
+<script type="text/babel" src="{{ url_for('static', filename='JS/JS_PlayerProfile2.js') }}"></script>
+{% endblock %}

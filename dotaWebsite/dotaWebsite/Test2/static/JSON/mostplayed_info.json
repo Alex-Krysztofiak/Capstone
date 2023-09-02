@@ -1,0 +1,65 @@
+[
+  {
+    "hero_id":"84",
+    "hero_name":"Ogre Magi",
+    "games":207,
+    "win":119,
+    "wr":"57.49%"
+  },
+  {
+    "hero_id":"85",
+    "hero_name":"Undying",
+    "games":148,
+    "win":98,
+    "wr":"66.22%"
+  },
+  {
+    "hero_id":"57",
+    "hero_name":"Omniknight",
+    "games":138,
+    "win":83,
+    "wr":"60.14%"
+  },
+  {
+    "hero_id":"31",
+    "hero_name":"Lich",
+    "games":98,
+    "win":59,
+    "wr":"60.2%"
+  },
+  {
+    "hero_id":"110",
+    "hero_name":"Phoenix",
+    "games":90,
+    "win":44,
+    "wr":"48.89%"
+  },
+  {
+    "hero_id":"102",
+    "hero_name":"Abaddon",
+    "games":83,
+    "win":52,
+    "wr":"62.65%"
+  },
+  {
+    "hero_id":"112",
+    "hero_name":"Winter Wyvern",
+    "games":79,
+    "win":41,
+    "wr":"51.9%"
+  },
+  {
+    "hero_id":"5",
+    "hero_name":"Crystal Maiden",
+    "games":69,
+    "win":37,
+    "wr":"53.62%"
+  },
+  {
+    "hero_id":"3",
+    "hero_name":"Bane",
+    "games":68,
+    "win":39,
+    "wr":"57.35%"
+  }
+]
